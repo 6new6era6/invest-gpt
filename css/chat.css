@@ -39,6 +39,11 @@
 	color: #222;
 	margin-right: 20%;
 }
+.bubble.bot {
+	background: #e8f5e9;
+	color: #222;
+	margin-right: 20%;
+}
 .typing-indicator {
 	color: #888;
 	font-size: 0.95em;
@@ -72,3 +77,18 @@
 	font-size: 1em;
 	cursor: pointer;
 }
+.cta {
+	background: #2a7;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 20px;
+	margin: 12px 0 0 0;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+/* Новий макет */
+.chat-root header { margin-bottom: 8px; }
+.chat-window { min-height: 200px; max-height: 360px; overflow-y: auto; background:#f7f7fa; border-radius:8px; padding:10px; }
+.chat-form { display:flex; gap:8px; margin-top:10px; }
