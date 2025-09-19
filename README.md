@@ -22,10 +22,9 @@ php -S 0.0.0.0:8000 -t .
 ## Налаштування ключа OpenAI
 Проксі читає ключ у порядку:
 1. env `OPENAI_API_KEY`
-2. `api/openai_key.php` (повинен `return 'sk-…';`)
-3. `/.openai_key` (рядок з ключем)
+2. `/.openai_key` (рядок з ключем; файл ігнорується в git)
 
-У продакшені використовуйте змінні оточення. `.gitignore` блокує коміт ключів.
+У продакшені використовуйте змінні оточення. Не зберігайте ключ у репозиторії.
 
 ## Keitaro-friendly
 - Жодного SSE / `stream:true` — тільки JSON-відповіді
@@ -35,7 +34,7 @@ php -S 0.0.0.0:8000 -t .
 ## Структура
 - `/chat/` — чат-опитування (`js/chat_flow.js`)
 - `/analysis/` — картка аналізу (`js/analysis_card.js`)
-- `/demo/` — демо-симуляція з локальними JSON (`js/demo_sim.js`)
+- `/demo/` — демо-симуляція на чистому Canvas (`js/demo_sim.js`)
 - `/api/openai.php` — JSON-проксі до OpenAI (без SSE)
 - `/index.php` — фінальна форма, `js/handoff.js` переносить дані з `sessionStorage`
 
