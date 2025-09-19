@@ -1,0 +1,6 @@
+/.openai_key
+/api/openai_key.php
+/.env
+node_modules/
+*.log
+/.DS_Store
