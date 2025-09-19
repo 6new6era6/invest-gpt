@@ -1,0 +1,74 @@
+.chat-container {
+	max-width: 420px;
+	margin: 40px auto;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 16px #0001;
+	padding: 24px 16px 16px 16px;
+}
+.chat-header {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 12px;
+	color: #2a7;
+}
+.chat-bubbles {
+	min-height: 180px;
+	max-height: 320px;
+	overflow-y: auto;
+	margin-bottom: 12px;
+	background: #f7f7fa;
+	border-radius: 8px;
+	padding: 10px;
+}
+.bubble {
+	display: inline-block;
+	padding: 8px 14px;
+	border-radius: 16px;
+	margin: 4px 0;
+	max-width: 90%;
+	word-break: break-word;
+}
+.bubble.user {
+	background: #e0f7fa;
+	align-self: flex-end;
+	margin-left: 20%;
+}
+.bubble.gpt {
+	background: #e8f5e9;
+	color: #222;
+	margin-right: 20%;
+}
+.typing-indicator {
+	color: #888;
+	font-size: 0.95em;
+	margin-bottom: 8px;
+}
+#chat-form {
+	display: flex;
+	gap: 8px;
+}
+#chat-input {
+	flex: 1;
+	padding: 8px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+}
+#chat-send {
+	background: #2a7;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 8px 16px;
+	cursor: pointer;
+}
+.cta-btn {
+	background: #2a7;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 20px;
+	margin: 12px 0 0 0;
+	font-size: 1em;
+	cursor: pointer;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>InvestGPT Funnel — Чат-опитування</title>
+	<link rel="icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../css/chat.css">
+	<link rel="stylesheet" href="../css/flow.css">
+	<link rel="stylesheet" href="../css/funnel.css">
+</head>
+<body>
+	<div class="chat-container">
+		<div class="chat-header">Опитування InvestGPT</div>
+		<div id="chat-bubbles" class="chat-bubbles"></div>
+		<div id="typing-indicator" class="typing-indicator" style="display:none;">GPT набирає…</div>
+		<form id="chat-form" autocomplete="off">
+			<input type="text" id="chat-input" placeholder="Ваша відповідь…" autocomplete="off" required />
+			<button type="submit" id="chat-send">Відправити</button>
+		</form>
+	</div>
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/chat_flow.js"></script>
+</body>
+</html>
