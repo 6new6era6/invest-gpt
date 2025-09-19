@@ -1,55 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 <head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>InvestGPT — Демо</title>
-	<link rel="stylesheet" href="../css/flow.css"/>
-	<style>
-		body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:0; background:#fafafa; }
-		.wrap { max-width: 900px; margin: 0 auto; padding: 16px; }
-		h1 { margin: 8px 0; }
-		#chart { width: 100%; height: 360px; background:#fff; border:1px solid #e5e7eb; border-radius:12px; }
-		.panel { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:12px; margin-top:12px; }
-		.btn { border:0; background:#111827; color:#fff; padding:10px 16px; border-radius:10px; cursor:pointer; }
-		.btn.green { background:#10b981; }
-		.row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
-		.orders { font-size:14px; line-height:1.5; max-height: 200px; overflow:auto; }
-		.muted { color:#6b7280; font-size: 12px;}
-	</style>
+	<link rel="stylesheet" href="../css/flow.css" />
+	<link rel="stylesheet" href="../css/funnel.css" />
+	<link rel="stylesheet" href="./app/demo_ui.css" />
 </head>
 <body>
-	<div class="wrap">
-		<h1>Демо-симуляція</h1>
-		<div class="muted">Освітня симуляція. Не є інвестпорадою.</div>
-		<div class="panel">
-			<div class="row">
-				<div><b>Актив:</b> <span id="asset"></span></div>
-				<div><b>Сума входу:</b>
-					<select id="amount">
-						<option>250</option><option>500</option><option selected>1000</option>
+	<main class="demo-root">
+		<header class="demo-header">
+			<h1 id="demo-asset">—</h1>
+			<p class="disclaimer">Освітня симуляція. Не є інвестиційною порадою.</p>
+		</header>
+
+		<section class="demo-stage">
+			<div id="demo-chart" class="chart"></div>
+			<div class="controls">
+				<div class="amount">
+					<span>Сума входу:</span>
+					<button data-amt="250">250</button>
+					<button data-amt="500">500</button>
+					<button data-amt="1000">1000</button>
+				</div>
+				<div class="playback">
+					<button id="btn-start">Start</button>
+					<button id="btn-pause">Pause</button>
+					<button id="btn-reset">Reset</button>
+					<select id="speed">
+						<option value="slow">Slow</option>
+						<option value="normal" selected>Normal</option>
+						<option value="fast">Fast</option>
 					</select>
 				</div>
-				<button id="run" class="btn">Розпочати симуляцію</button>
 			</div>
-		</div>
 
-		<canvas id="chart"></canvas>
-
-		<div class="panel">
-			<div><b>Ордери</b></div>
-			<div id="orders" class="orders"></div>
-			<div style="margin-top:8px;"><b>Підсумок:</b> <span id="pnl"></span></div>
-		</div>
-
-		<div class="panel">
-			<div class="row">
-				<div>Готові перейти до реального інструменту?</div>
-				<button id="to-form" class="btn green">Перейти до форми</button>
+			<div id="demo-stats" class="stats">
+				<div>PNL: <b id="pnl">0.00%</b></div>
+				<div>Trades: <b id="trades">0</b></div>
+				<div>Win rate: <b id="winrate">0%</b></div>
 			</div>
-		</div>
-	</div>
 
-	<script src="../js/demo_sim.js"></script>
+			<div id="demo-trades" class="trades"></div>
+
+			<section id="postdemo" class="postdemo hidden">
+				<h2>Коротке опитування</h2>
+				<label>Сума старту сьогодні:
+					<select id="pd-budget">
+						<option>250</option><option>500</option><option>1000</option><option>Інша</option>
+					</select>
+				</label>
+				<label>Що тестуємо першим?
+					<select id="pd-segment">
+						<option>крипта</option><option>FX</option><option>індекси</option><option>акції</option>
+					</select>
+				</label>
+				<label>Коли зручно стартувати?
+					<select id="pd-when">
+						<option>сьогодні</option><option>завтра</option><option>цього тижня</option>
+					</select>
+				</label>
+				<button id="pd-continue" disabled>Перейти до форми</button>
+			</section>
+		</section>
+	</main>
+
+	<!-- ВАЖЛИВО: спочатку бібліотека графіків (локальна), потім вендор, потім наш адаптер -->
+	<script src="../js/lightweight-charts.standalone.production.js"></script>
+	<!-- Заглушки для vendor: очікується, що тут з'являться їхні бандли з demo.zip -->
+	<script>window.DEMO_VENDOR_READY = true;</script>
+	<!-- наш інтеграційний шар -->
+	<script src="./app/demo_sim.js"></script>
 </body>
 </html>

@@ -34,9 +34,16 @@ php -S 0.0.0.0:8000 -t .
 ## Структура
 - `/chat/` — чат-опитування (`js/chat_flow.js`)
 - `/analysis/` — картка аналізу (`js/analysis_card.js`)
-- `/demo/` — демо-симуляція на чистому Canvas (`js/demo_sim.js`)
+- `/demo/` — демо-симуляція з інтеграційним шаром (`/demo/app/*`)
 - `/api/openai.php` — JSON-проксі до OpenAI (без SSE)
 - `/index.php` — фінальна форма, `js/handoff.js` переносить дані з `sessionStorage`
+
+## Демо-симуляція: інтеграція (швидкий план)
+1. Розпакуйте `demo.zip` у `/demo/vendor/` (код вендора не змінюйте).
+2. Переконайтесь, що локально підключено `../js/lightweight-charts.standalone.production.js` (або вендорська копія).
+3. Скелет сторінки — див. `/demo/index.html` (порядок: lib → vendor → `/demo/app/demo_sim.js`).
+4. Наш API доступний як `window.Demo` з методами: `init`, `start`, `pause`, `reset`, `setAmount`, `setSpeed`, `on` тощо.
+5. Події: `ready`, `trade`, `summary`. Після `summary` збереження у `sessionStorage.leadCtx.demo` і показ пост‑опитування.
 
 ## Acceptance Checklist
 - [x] Чат працює, етапами керує `action` від GPT, кнопка «Перейти до демо» з’являється тільки за `goto_demo`

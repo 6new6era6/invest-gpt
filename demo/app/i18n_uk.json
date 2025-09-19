@@ -1,0 +1,21 @@
+{
+  "title": "Демо-симуляція",
+  "disclaimer": "Освітня симуляція. Не є інвестиційною порадою.",
+  "amount": "Сума входу:",
+  "start": "Start",
+  "pause": "Pause",
+  "reset": "Reset",
+  "speed": "Швидкість:",
+  "slow": "Slow",
+  "normal": "Normal",
+  "fast": "Fast",
+  "pnl": "PNL:",
+  "trades": "Trades:",
+  "winrate": "Win rate:",
+  "postdemo_title": "Коротке опитування",
+  "postdemo_budget": "Сума старту сьогодні:",
+  "postdemo_segment": "Що тестуємо першим?",
+  "postdemo_when": "Коли зручно стартувати?",
+  "continue": "Перейти до форми",
+  "education_note": "Освітня симуляція, не гарантія результатів."
+}
