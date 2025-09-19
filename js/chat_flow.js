@@ -1,8 +1,21 @@
-// js/chat_flow.js — JSON клієнт (без SSE)
+// js/chat_flow.js — JSON клієнт (без SSE) з надійними селекторами і очікуванням DOM
 (function(){
-	const chat  = document.getElementById('chat') || document.getElementById('chat-bubbles');
-	const input = document.getElementById('chat-input');
-	const send  = document.getElementById('chat-send');
+	function getEl() {
+		// Надійний пошук контейнера чату і елементів вводу/кнопки
+		let chat = document.getElementById('chat')
+			|| document.querySelector('.chat-window')
+			|| document.getElementById('chat-bubbles');
+		if (!chat) {
+			// Фолбек: створюємо простий контейнер, якщо розмітка інша/скрипт підключено в head
+			chat = document.createElement('section');
+			chat.id = 'chat';
+			chat.className = 'chat-window';
+			document.body.appendChild(chat);
+		}
+		const input = document.getElementById('chat-input') || document.querySelector('input[type="text"], input[name="message"], #message');
+		const send  = document.getElementById('chat-send') || document.querySelector('button[type="submit"], button#send, .chat-send');
+		return { chat, input, send };
+	}
 	const context = { messages: [], model: 'gpt-4o-mini' };
 
 	function typeMessage(text, el, speed = 24) {
@@ -10,7 +23,12 @@
 			let i = 0; el.textContent = '';
 			const t = setInterval(() => {
 				el.textContent += text[i] ?? '';
-				i++; chat.scrollTop = chat.scrollHeight;
+				i++;
+				try {
+					if (el && el.parentElement) {
+						const c = el.parentElement; c.scrollTop = c.scrollHeight;
+					}
+				} catch(_){}
 				if (i >= text.length) { clearInterval(t); resolve(); }
 			}, speed);
 		});
@@ -18,18 +36,20 @@
 	async function appendMessage(text, cls = 'bot', animate = true) {
 		const el = document.createElement('div');
 		el.className = `bubble ${cls}`;
-		chat.appendChild(el);
+		const { chat } = getEl();
+		chat && chat.appendChild(el);
 		if (animate && cls === 'bot') await typeMessage(text, el);
 		else el.textContent = text;
-		chat.scrollTop = chat.scrollHeight;
+		try { chat.scrollTop = chat.scrollHeight; } catch(_){}
 		return el;
 	}
 	function showTyping() {
 		const el = document.createElement('div');
 		el.className = 'typing-indicator';
 		el.innerHTML = '<span></span><span></span><span></span>';
-		chat.appendChild(el);
-		chat.scrollTop = chat.scrollHeight;
+		const { chat } = getEl();
+		chat && chat.appendChild(el);
+		try { chat.scrollTop = chat.scrollHeight; } catch(_){}
 		return el;
 	}
 	function applyUpdates(upd) {
@@ -58,8 +78,9 @@
 			window.location.href = `../demo/index.html${q}`;
 		};
 		wrap.appendChild(btn);
-		chat.appendChild(wrap);
-		chat.scrollTop = chat.scrollHeight;
+		const { chat } = getEl();
+		chat && chat.appendChild(wrap);
+		try { chat.scrollTop = chat.scrollHeight; } catch(_){}
 	}
 	async function askOpenAI(userText) {
 		context.messages.push({ role: 'user', content: userText });
@@ -74,7 +95,7 @@
 				signal: ac.signal
 			});
 			clearTimeout(tid);
-			typing.remove();
+			try { typing.remove(); } catch(_){}
 			if (!res.ok) throw new Error(`HTTP ${res.status}`);
 			const data = await res.json();
 			if (data.error === 'NO_API_KEY') {
@@ -98,7 +119,7 @@
 					break;
 			}
 		} catch (e) {
-			typing.remove();
+			try { typing.remove(); } catch(_){}
 			console.error(e);
 			await appendMessage('Вибачте, сталася помилка. Спробуйте ще раз.', 'bot');
 		}
@@ -120,15 +141,25 @@
 		}
 		await appendMessage(fbQ[fbI++], 'bot', true);
 	}
-	// Події
-	send.addEventListener('click', async () => {
-		const message = input.value.trim();
-		if (!message) return;
-		input.value = '';
-		await appendMessage(message, 'user', false);
-		askOpenAI(message);
-	});
-	input.addEventListener('keypress', e => {
-		if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send.click(); }
-	});
+	// Події після готовності DOM
+	function wireEvents(){
+		const { input, send } = getEl();
+		if (!input || !send) return; // якщо розмітка інша — не падаємо
+		send.addEventListener('click', async () => {
+			const message = (input.value||'').trim();
+			if (!message) return;
+			input.value = '';
+			await appendMessage(message, 'user', false);
+			askOpenAI(message);
+		});
+		input.addEventListener('keypress', e => {
+			if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send.click(); }
+		});
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', wireEvents);
+	} else {
+		wireEvents();
+	}
 })();
