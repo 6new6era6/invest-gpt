@@ -68,8 +68,9 @@
 
 	<!-- ВАЖЛИВО: спочатку бібліотека графіків (локальна), потім вендор, потім наш адаптер -->
 	<script src="../js/lightweight-charts.standalone.production.js"></script>
-	<!-- Заглушки для vendor: очікується, що тут з'являться їхні бандли з demo.zip -->
-	<script>window.DEMO_VENDOR_READY = true;</script>
+	<!-- Vendor бандли (поклади файли з demo.zip у ці шляхи) -->
+	<link rel="stylesheet" href="./vendor/css/vendor_bundle.css">
+	<script src="./vendor/js/vendor_bundle.js"></script>
 	<!-- наш інтеграційний шар -->
 	<script src="./app/demo_sim.js"></script>
 </body>

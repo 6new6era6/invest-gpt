@@ -22,7 +22,9 @@ $(function(){
 	$('#chance_range').val(ctx.chance_range||'');
 	$('#segment').val(ctx.segment||'');
 	$('#currency').val(ctx.currency||'');
-	$('#demo_amount').val(ctx.demo_amount||'');
+	// demo_amount: беремо з прямого поля або з demo.selectedAmount
+	var demoAmt = ctx.demo_amount || (ctx.demo && ctx.demo.selectedAmount);
+	$('#demo_amount').val(demoAmt||'');
 	// авто-сигнали
 	if(ctx.auto_signals) {
 		$('#device').val(ctx.auto_signals.device||'');
