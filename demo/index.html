@@ -1,77 +1,24 @@
 <!doctype html>
-<html lang="uk">
+<html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>InvestGPT — Демо</title>
-	<link rel="stylesheet" href="../css/flow.css" />
-	<link rel="stylesheet" href="../css/funnel.css" />
-	<link rel="stylesheet" href="./app/demo_ui.css" />
+	<title>InvestGPT — Demo</title>
+	<meta http-equiv="refresh" content="0; url=./vendor/index.php">
+	<script>
+		// JS fallback to preserve query string
+		(function(){
+			var qs = location.search || '';
+			var target = './vendor/index.php' + qs;
+			if (location.href.indexOf('/vendor/index.php') === -1) {
+				window.location.replace(target);
+			}
+		})();
+	</script>
 </head>
 <body>
-	<main class="demo-root">
-		<header class="demo-header">
-			<h1 id="demo-asset">—</h1>
-			<p class="disclaimer">Освітня симуляція. Не є інвестиційною порадою.</p>
-		</header>
-
-		<section class="demo-stage">
-			<div id="demo-chart" class="chart"></div>
-			<div class="controls">
-				<div class="amount">
-					<span>Сума входу:</span>
-					<button data-amt="250">250</button>
-					<button data-amt="500">500</button>
-					<button data-amt="1000">1000</button>
-				</div>
-				<div class="playback">
-					<button id="btn-start">Start</button>
-					<button id="btn-pause">Pause</button>
-					<button id="btn-reset">Reset</button>
-					<select id="speed">
-						<option value="slow">Slow</option>
-						<option value="normal" selected>Normal</option>
-						<option value="fast">Fast</option>
-					</select>
-				</div>
-			</div>
-
-			<div id="demo-stats" class="stats">
-				<div>PNL: <b id="pnl">0.00%</b></div>
-				<div>Trades: <b id="trades">0</b></div>
-				<div>Win rate: <b id="winrate">0%</b></div>
-			</div>
-
-			<div id="demo-trades" class="trades"></div>
-
-			<section id="postdemo" class="postdemo hidden">
-				<h2>Коротке опитування</h2>
-				<label>Сума старту сьогодні:
-					<select id="pd-budget">
-						<option>250</option><option>500</option><option>1000</option><option>Інша</option>
-					</select>
-				</label>
-				<label>Що тестуємо першим?
-					<select id="pd-segment">
-						<option>крипта</option><option>FX</option><option>індекси</option><option>акції</option>
-					</select>
-				</label>
-				<label>Коли зручно стартувати?
-					<select id="pd-when">
-						<option>сьогодні</option><option>завтра</option><option>цього тижня</option>
-					</select>
-				</label>
-				<button id="pd-continue" disabled>Перейти до форми</button>
-			</section>
-		</section>
-	</main>
-
-	<!-- ВАЖЛИВО: спочатку бібліотека графіків (локальна), потім вендор, потім наш адаптер -->
-	<script src="../js/lightweight-charts.standalone.production.js"></script>
-	<!-- Vendor бандли (поклади файли з demo.zip у ці шляхи) -->
-	<link rel="stylesheet" href="./vendor/css/vendor_bundle.css">
-	<script src="./vendor/js/vendor_bundle.js"></script>
-	<!-- наш інтеграційний шар -->
-	<script src="./app/demo_sim.js"></script>
+	<noscript>
+		<p>JavaScript is required. Please open <a href="./vendor/index.php">the demo</a>.</p>
+	</noscript>
 </body>
 </html>
