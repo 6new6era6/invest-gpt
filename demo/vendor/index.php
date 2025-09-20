@@ -1408,7 +1408,7 @@ background-color: #212936;
 <div id="superStickyHeader" class="hidden fixed top-0 left-0 right-0 z-[9999] bg-gradient-to-b from-black/70 via-black/60 to-black/40 backdrop-blur-lg border-b border-white/10 px-6 py-3">
   <div class="flex items-center">
     <button onclick="history.back()" class="text-xs text-white border border-white px-4 py-1 rounded-full hover:bg-white hover:text-black transition font-semibold">
-        Zurück
+        Back
       </button>
   </div>
 </div>
@@ -1425,26 +1425,26 @@ background-color: #212936;
 
         <!-- Контент -->
 <i data-lucide="bot" class="w-20 h-20 mx-auto mb-4 text-blue-500"></i>
-<h2 class="relative z-10 text-xl sm:text-2xl font-bold mb-4">Willkommen zur Demo des<br> <span class="text-gradient">Trading-Bots</span></h2>
+<h2 class="relative z-10 text-xl sm:text-2xl font-bold mb-4">Welcome to the <br> <span class="text-gradient">Trading Bot</span> Demo</h2>
 <p class="relative z-10 text-gray-300 mb-6 text-sm sm:text-base">
-    Dies ist eine Demonstration, die zeigt, wie ein automatisierter Trading-Bot funktioniert. Es wird kein echtes Geld verwendet und keine echten Trades ausgeführt.
+  This is a demonstration that shows how an automated trading bot works. No real money is used and no real trades are executed.
 </p>
 
 <div class="relative z-10 bg-slate-800 p-4 rounded-md mb-6 text-left text-sm sm:text-base">
-    <h3 class="font-bold mb-2">Das wirst du lernen:</h3>
+  <h3 class="font-bold mb-2">What you'll learn:</h3>
     <ul class="list-disc pl-5 space-y-1 text-gray-300">
-        <li>Wie man einen Trading-Bot einrichtet</li>
-        <li>Wie man Märkte und Strategien auswählt</li>
-        <li>Wie man die Leistung des Bots überwacht</li>
-        <li>Wie der Bot automatisch Trades ausführt</li>
+    <li>How to set up a trading bot</li>
+    <li>How to choose markets and strategies</li>
+    <li>How to monitor the bot's performance</li>
+    <li>How the bot executes trades automatically</li>
     </ul>
 </div>
 <p class="relative z-10 text-gray-400 mb-6 text-sm sm:text-base">
-    Los geht’s mit einem kurzen Tutorial, das dir zeigt, wie alles funktioniert.
+  Let's start with a quick tutorial that shows how everything works.
 </p>
 
 <button id="startDemoBtn" class="relative z-10 py-3 px-6 sm:px-8 rounded-md btn-primary font-medium w-full sm:w-auto">
-    Demo starten
+  Start Demo
 </button>
     </div>
 </div>
@@ -1524,14 +1524,14 @@ background-color: #212936;
             <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
           </svg>
-          Vollzugriff erhalten
+          Get Full Access
         </a>
       </div>
     
     <!-- Información de la cuenta -->
     <div class="flex flex-col items-center md:flex-row md:items-center md:space-x-4 gap-2">
         <div class="text-center md:text-right">
-          <p class="text-sm text-gray-400">Aktueller DEMO-Saldo</p>
+          <p class="text-sm text-gray-400">Current DEMO Balance</p>
           <p class="text-xl font-bold text-white">₣ <span id="balance">0.00</span></p>
         </div>
         <div>
@@ -1548,22 +1548,22 @@ background-color: #212936;
         <!-- Main Content -->
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
             <!-- Left Column - Settings -->
-            <div class="card p-6" data-intro="Aqui você pode configurar as configurações do seu bot de trading, incluindo depósito, mercados e estratégia." data-step="2">
-                <h2 class="text-xl font-bold mb-4">Trading-Einstellungen</h2>
+            <div class="card p-6" data-intro="Here you can configure your trading bot settings, including deposit, markets, and strategy." data-step="2">
+                <h2 class="text-xl font-bold mb-4">Trading Settings</h2>
 
                 <!-- Einzahlung-/Auszahlungs-Buttons -->
-                <div class="flex space-x-2 mb-6" data-intro="Du musst Guthaben einzahlen, um mit dem Trading zu beginnen. Klick auf den Einzahlen-Button, um Geld auf dein Konto zu laden." data-step="3">
+                <div class="flex space-x-2 mb-6" data-intro="You need to deposit funds to start trading. Click the Deposit button to add funds to your account." data-step="3">
                     <button id="depositBtn" class="flex-1 py-2 rounded-md btn-primary font-medium pulse">
-                        Einzahlen
+                        Deposit
                     </button>
                     <button id="withdrawBtn" class="flex-1 py-2 rounded-md btn-neutral font-medium">
-                        Auszahlen
+                        Withdraw
                     </button>
                 </div>
 
                 <!-- Market Selection -->
-                <div class="mb-6" data-intro="Wähle die Märkte aus, auf denen du handeln möchtest. Du kannst mehrere auswählen." data-step="4">
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Märkte auswählen</label>
+                <div class="mb-6" data-intro="Select the markets you want to trade. You can choose multiple." data-step="4">
+                    <label class="block text-sm font-medium text-gray-400 mb-2">Select Markets</label>
                     <div class="grid grid-cols-2 gap-3">
                       <div class="market-option selected p-3 rounded-md bg-slate-800" data-market="forex">
                         <div class="flex items-center">
@@ -1574,7 +1574,7 @@ background-color: #212936;
                           </div>
                           <span>Forex</span>
                         </div>
-                        <p class="text-xs text-gray-400 mt-1">Paare</p>
+                        <p class="text-xs text-gray-400 mt-1">Pairs</p>
                       </div>
                       <div class="market-option p-3 rounded-md bg-slate-800" data-market="stocks">
                         <div class="flex items-center">
@@ -1583,9 +1583,9 @@ background-color: #212936;
                               <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"></path>
                             </svg>
                           </div>
-                          <span>Aktien</span>
+                          <span>Stocks</span>
                         </div>
-                        <p class="text-xs text-gray-400 mt-1">Aktien</p>
+                        <p class="text-xs text-gray-400 mt-1">Equities</p>
                       </div>
                       <div class="market-option p-3 rounded-md bg-slate-800" data-market="crypto">
                         <div class="flex items-center">
@@ -1594,9 +1594,9 @@ background-color: #212936;
                               <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path>
                             </svg>
                           </div>
-                          <span>Krypto</span>
+                          <span>Crypto</span>
                         </div>
-                        <p class="text-xs text-gray-400 mt-1">Digitale Währungen</p>
+                        <p class="text-xs text-gray-400 mt-1">Digital currencies</p>
                       </div>
                       <div class="market-option p-3 rounded-md bg-slate-800" data-market="commodities">
                         <div class="flex items-center">
@@ -1605,33 +1605,33 @@ background-color: #212936;
                               <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path>
                             </svg>
                           </div>
-                          <span>Rohstoffe</span>
+                          <span>Commodities</span>
                         </div>
-                        <p class="text-xs text-gray-400 mt-1">Gold, Öl, Metalle</p>
+                        <p class="text-xs text-gray-400 mt-1">Gold, Oil, Metals</p>
                       </div>
                     </div>
                   </div>
                 
                 <!-- Trading Strategy -->
-                <div class="mb-6" data-intro="Wähle deine Trading-Strategie. Diese beeinflusst, wie der Bot deine Gelder verwaltet." data-step="5">
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Trading-Strategie</label>
+                <div class="mb-6" data-intro="Choose your trading strategy. This affects how the bot manages your funds." data-step="5">
+                    <label class="block text-sm font-medium text-gray-400 mb-2">Trading Strategy</label>
                     <select id="strategySelect" class="w-full bg-slate-800 border border-slate-700 rounded-md py-2 px-3 text-white">
-                      <option value="conservative" data-min="250" data-max="1000">Konservativ</option>
-                      <option value="balanced" data-min="1000" data-max="5000">Ausgewogen</option>
-                      <option value="aggressive" data-min="5000" data-max="50000">Aggressiv</option>
+                      <option value="conservative" data-min="250" data-max="1000">Conservative</option>
+                      <option value="balanced" data-min="1000" data-max="5000">Balanced</option>
+                      <option value="aggressive" data-min="5000" data-max="50000">Aggressive</option>
                     </select>
                   </div>
                 
                 <!-- Start Trading Button -->
-                <button id="startTradingBtn" class="w-full py-3 rounded-md btn-primary font-medium super-highlight" data-intro="Klicke auf diesen Button, um den Trading-Bot zu starten. Er wird entsprechend deiner Einstellungen mit dem Handeln beginnen." data-step="6">
-                    Trading-Bot starten
+        <button id="startTradingBtn" class="w-full py-3 rounded-md btn-primary font-medium super-highlight" data-intro="Click this button to start the trading bot. It will begin trading based on your settings." data-step="6">
+          Start Trading Bot
                   </button>
                   <!-- Bot-Status -->
                   <div id="botStatus" class="mt-4 hidden">
                     <div class="flex items-center justify-between p-3 bg-slate-800 rounded-md">
                       <div class="flex items-center">
                         <div class="h-3 w-3 rounded-full bg-green-500 mr-2 animate-pulse"></div>
-                        <span class="text-sm">Bot läuft</span>
+                        <span class="text-sm">Bot running</span>
                       </div>
                       <button id="pauseBotBtn" class="text-xs text-neutral hover:text-neutral-400">Pause</button>
                     </div>
@@ -1639,9 +1639,9 @@ background-color: #212936;
             </div>
             
             <!-- Central Column - Chart -->
-            <div class="card p-6 lg:col-span-3 relative" data-intro="Este é o gráfico de trading ao vivo onde você pode monitorar o crescimento do seu saldo e atividade de trading." data-step="7">
+            <div class="card p-6 lg:col-span-3 relative" data-intro="This is the live trading chart where you can monitor your balance growth and trading activity." data-step="7">
                 <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-xl font-bold">Kontostandsdiagramm</h2>
+                    <h2 class="text-xl font-bold">Balance Chart</h2>
                   </div>
                 
                   <div class="relative h-96 chart-container">
@@ -1654,10 +1654,10 @@ background-color: #212936;
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
-                      <p class="text-lg font-medium">Du muesch erscht Fondse iialah zum starte</p>
-                      <p class="text-sm text-gray-400 mt-2 mb-4">Drück uf dr “Iialah”-Knopf zum Fondse iizahle</p>
+                      <p class="text-lg font-medium">You need to deposit funds to start</p>
+                      <p class="text-sm text-gray-400 mt-2 mb-4">Click the "Deposit" button to add funds</p>
                       <button id="depositBtnOverlay" class="py-2 px-6 rounded-md btn-primary font-medium">
-                        Jetzt iialah
+                        Deposit now
                       </button>
                     </div>
                   
@@ -1666,20 +1666,20 @@ background-color: #212936;
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                         </svg>
-                        <p class="text-lg font-medium">Starte dr Trading-Bot zum Live-Chart z’luege</p>
-                        <p class="text-sm text-gray-400 mt-2">Stell dini Präferenze i und drück uf “Trading-Bot starte”</p>
+                        <p class="text-lg font-medium">Start the trading bot to view the live chart</p>
+                        <p class="text-sm text-gray-400 mt-2">Set your preferences and click "Start Trading Bot"</p>
                       </div>
                     </div>
                   
                     <!-- Live Trades Container -->
-                    <div id="liveTradesContainer" class="live-trades-container hidden" data-intro="Da chasch live Trade Notifications gseh, wenn si erfolge." data-step="8">
+                    <div id="liveTradesContainer" class="live-trades-container hidden" data-intro="Here you can see live trade notifications as they happen." data-step="8">
                       <!-- Live trades will be added here -->
                     </div>
                   
                     <!-- Balance Chart -->
                     <div id="balanceDisplay" class="balance-chart hidden">
                       <div class="flex items-center justify-between mb-2">
-                        <span class="text-sm font-medium">Total Saldo</span>
+                        <span class="text-sm font-medium">Total Balance</span>
                         <span class="text-lg font-bold">₣ <span id="currentBalance">0.00</span></span>
                       </div>
                       <div class="flex items-center">
@@ -1690,17 +1690,17 @@ background-color: #212936;
                   </div>
                 
                 <!-- Trading Statistics -->
-                <div class="grid grid-cols-4 gap-4 mt-6" data-intro="Die Statistik zeigt dini Trading-Performance, inklusive total Trade, Erfolgsquote und Gewinne." data-step="9">
+                <div class="grid grid-cols-4 gap-4 mt-6" data-intro="These statistics show your trading performance, including total trades, win rate, and profits." data-step="9">
                     <div class="bg-slate-800 p-3 rounded-md">
-                      <p class="text-sm text-gray-400">Total Trade</p>
+                      <p class="text-sm text-gray-400">Total Trades</p>
                       <p class="text-xl font-bold"><span id="totalTrades">0</span></p>
                     </div>
                     <div class="bg-slate-800 p-3 rounded-md">
-                      <p class="text-sm text-gray-400">Erfolgsquote</p>
+                      <p class="text-sm text-gray-400">Win Rate</p>
                       <p class="text-xl font-bold"><span id="winRate">0</span>%</p>
                     </div>
                     <div class="bg-slate-800 p-3 rounded-md">
-                      <p class="text-sm text-gray-400">Profit hüt</p>
+                      <p class="text-sm text-gray-400">Profit Today</p>
                       <p class="text-xl font-bold">₣<span id="profitToday">0.00</span></p>
                     </div>
                     <div class="bg-slate-800 p-3 rounded-md">
@@ -1711,26 +1711,26 @@ background-color: #212936;
             </div>
             
             <!-- Trade History -->
-            <div class="card p-6 lg:col-span-4" data-intro="Die Tabelle zeigt dini neuste Trades mit Detail zu jeder Transaktion." data-step="10">
-                <h2 class="text-xl font-bold mb-4">Letzti Trades</h2>
+      <div class="card p-6 lg:col-span-4" data-intro="This table shows your most recent trades with details for each transaction." data-step="10">
+        <h2 class="text-xl font-bold mb-4">Latest Trades</h2>
                 
                 <div class="overflow-x-auto">
                   <table class="min-w-full">
                     <thead>
                       <tr class="border-b border-slate-700">
-                        <th class="py-3 text-left text-sm font-medium text-gray-400">Ziit</th>
+                        <th class="py-3 text-left text-sm font-medium text-gray-400">Time</th>
                         <th class="py-3 text-left text-sm font-medium text-gray-400">Asset</th>
-                        <th class="py-3 text-left text-sm font-medium text-gray-400">Typ</th>
-                        <th class="py-3 text-left text-sm font-medium text-gray-400">Eingang</th>
-                        <th class="py-3 text-left text-sm font-medium text-gray-400">Ausgang</th>
-                        <th class="py-3 text-left text-sm font-medium text-gray-400">Wert</th>
-                        <th class="py-3 text-right text-sm font-medium text-gray-400">Gewinn/Verlust</th>
+                        <th class="py-3 text-left text-sm font-medium text-gray-400">Type</th>
+                        <th class="py-3 text-left text-sm font-medium text-gray-400">Entry</th>
+                        <th class="py-3 text-left text-sm font-medium text-gray-400">Exit</th>
+                        <th class="py-3 text-left text-sm font-medium text-gray-400">Amount</th>
+                        <th class="py-3 text-right text-sm font-medium text-gray-400">Profit/Loss</th>
                       </tr>
                     </thead>
                     <tbody id="tradeHistory">
                       <!-- Dini Trade-Historie wird da angezeigt -->
                       <tr class="border-b border-slate-800">
-                        <td class="py-4 text-sm" colspan="7">Es sind no kei Trades vorhanden. Starte dä Trading-Bot für Aktivität z’zeige.</td>
+                        <td class="py-4 text-sm" colspan="7">No trades yet. Start the trading bot to see activity.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1741,13 +1741,13 @@ background-color: #212936;
         
         <!-- Footer -->
         <footer class="mt-8 text-center text-sm text-gray-500">
-            <p>Micronyx AI Ltd.© 2025 <br><span style="color: red;">Trading-Bot Demo.</span> <br>Das ist e Simulation nur zu Demonstrationszwecken.</p>
-            <p class="mt-1">Es wird keis echtes Geld verwendet und kei echte Trades ausgeführt.</p>
+            <p>Micronyx AI Ltd.© 2025 <br><span style="color: red;">Trading Bot Demo.</span> <br>This is a simulation for demonstration purposes only.</p>
+            <p class="mt-1">No real money is used and no real trades are executed.</p>
             <div class="legal-links flex flex-wrap space-x-4 justify-center mt-4">
-              <a href="#" class="legal-popup-link text-sm" data-popup="termos-uso-popup">Nutzungsbedingige</a>
-              <a href="#" class="legal-popup-link text-sm" data-popup="privacidade-popup">Datenschutzrichtlinie</a>
-              <a href="#" class="legal-popup-link text-sm" data-popup="cookies-popup">Cookie-Richtlinie</a>
-              <a href="#" class="legal-popup-link text-sm" data-popup="risco-popup">Risikohinweis</a>
+              <a href="#" class="legal-popup-link text-sm" data-popup="termos-uso-popup">Terms of Use</a>
+              <a href="#" class="legal-popup-link text-sm" data-popup="privacidade-popup">Privacy Policy</a>
+              <a href="#" class="legal-popup-link text-sm" data-popup="cookies-popup">Cookie Policy</a>
+              <a href="#" class="legal-popup-link text-sm" data-popup="risco-popup">Risk Disclosure</a>
             </div>
           </footer>
     </div>
@@ -1756,17 +1756,17 @@ background-color: #212936;
     <div id="depositModal" class="modal">
         <div class="modal-content">
             <div class="flex justify-between items-center mb-4">
-              <h2 class="text-xl font-bold">Guthabe einzahle <span style="color: red;">[Demo]</span></h2>
+              <h2 class="text-xl font-bold">Deposit Funds <span style="color: red;">[Demo]</span></h2>
               <button class="close-modal text-gray-400 hover:text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               </button>
             </div>
-            <p class="text-gray-400 mb-4">Wähl dä Betrag us, wo du uf din Trading-Account einzahle wotsch.</p>
+            <p class="text-gray-400 mb-4">Choose the amount you want to deposit into your trading account.</p>
           
             <div class="mb-6">
-              <label class="block text-sm font-medium text-gray-400 mb-2">Einzahlbetrag (250 - ₣ 50’000)</label>
+              <label class="block text-sm font-medium text-gray-400 mb-2">Deposit Amount (250 - ₣ 50,000)</label>
               <div class="flex items-center space-x-4">
                 <input type="range" id="depositSlider" min="250" max="50000" step="250" value="250" class="flex-1">
                 <div class="relative">
@@ -1783,7 +1783,7 @@ background-color: #212936;
             </div>
           
             <button id="confirmDepositBtn" class="w-full py-3 rounded-md btn-primary font-medium">
-              Einzahlung bestätige
+              Confirm Deposit
             </button>
           </div>
     </div>
@@ -1796,18 +1796,18 @@ background-color: #212936;
       <!-- Заголовок чата -->
       <div class="px-4 py-3 bg-gradient-to-r from-[#8d2cf6] to-[#71e1fc] text-white text-base font-semibold shadow-inner shadow-[#00000033]">
        
-        <p class="text-sm"> <i data-lucide="phone" class="w-4 h-4 mr-2 inline-block"></i> Vollständigen Zugang erhalten</p>
+  <p class="text-sm"> <i data-lucide="phone" class="w-4 h-4 mr-2 inline-block"></i> Get full access</p>
       </div>
   
       <!-- Форма -->
       <form action="thanks/index.php" method="POST" id="registrationForm3" class="p-4 space-y-4 text-sm">
-        <input name="f_name" type="text" placeholder="Vorname" class="text-base w-full bg-[#1b2232] border border-[#2e374d] text-white placeholder-gray-400 px-3 py-2 rounded-[0.75rem] focus:ring-2 focus:ring-[#71e1fc] focus:outline-none" required="">
+        <input name="f_name" type="text" placeholder="First name" class="text-base w-full bg-[#1b2232] border border-[#2e374d] text-white placeholder-gray-400 px-3 py-2 rounded-[0.75rem] focus:ring-2 focus:ring-[#71e1fc] focus:outline-none" required="">
       
-        <input name="l_name" type="text" placeholder="Nachname" class="text-base w-full bg-[#1b2232] border border-[#2e374d] text-white placeholder-gray-400 px-3 py-2 rounded-[0.75rem] focus:ring-2 focus:ring-[#71e1fc] focus:outline-none" required="">
+        <input name="l_name" type="text" placeholder="Last name" class="text-base w-full bg-[#1b2232] border border-[#2e374d] text-white placeholder-gray-400 px-3 py-2 rounded-[0.75rem] focus:ring-2 focus:ring-[#71e1fc] focus:outline-none" required="">
       
-        <input name="email" type="email" placeholder="E-Mail-Adresse" class="text-base w-full bg-[#1b2232] border border-[#2e374d] text-white placeholder-gray-400 px-3 py-2 rounded-[0.75rem] focus:ring-2 focus:ring-[#71e1fc] focus:outline-none" required="">
+        <input name="email" type="email" placeholder="Email address" class="text-base w-full bg-[#1b2232] border border-[#2e374d] text-white placeholder-gray-400 px-3 py-2 rounded-[0.75rem] focus:ring-2 focus:ring-[#71e1fc] focus:outline-none" required="">
       
-        <input type="tel" placeholder="" name="phone" class="text-base w-full bg-[#1b2232] border border-[#2e374d] text-white placeholder-gray-400 px-3 py-2 rounded-[0.75rem] focus:ring-2 focus:ring-[#71e1fc] focus:outline-none" required="">
+        <input type="tel" placeholder="Phone" name="phone" class="text-base w-full bg-[#1b2232] border border-[#2e374d] text-white placeholder-gray-400 px-3 py-2 rounded-[0.75rem] focus:ring-2 focus:ring-[#71e1fc] focus:outline-none" required="">
       
         <input type="hidden" name="phone2" class="phone2" autocomplete="on" required="">
 <input type="hidden" name="pixel_id" value="n">
@@ -1822,7 +1822,7 @@ background-color: #212936;
       
         <button type="submit" class="text-base w-full bg-[#71e1fc] hover:bg-[#63cde8] text-[#21293b] font-semibold py-2 rounded-[0.75rem] transition">
           <i data-lucide="rocket" class="inline-block w-4 h-4"></i>
-          Jetzt starten
+          Get started
         </button>
       </form>
     </div>
@@ -1860,26 +1860,26 @@ background-color: #212936;
     <div id="withdrawModal" class="modal">
         <div class="modal-content">
           <div class="flex justify-between items-center mb-4">
-            <h2 class="text-xl font-bold">Guthabe abhebe</h2>
+            <h2 class="text-xl font-bold">Withdraw Funds</h2>
             <button class="close-modal text-gray-400 hover:text-white">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             </button>
           </div>
-          <p class="text-gray-400 mb-4">Wähl dä Betrag und d'Methode zum Abhebe vo dim Trading-Konto us.</p>
+          <p class="text-gray-400 mb-4">Choose the amount and method to withdraw from your trading account.</p>
       
           <div class="mb-6">
-            <label class="block text-sm font-medium text-gray-400 mb-2">Abhebebetrag</label>
+            <label class="block text-sm font-medium text-gray-400 mb-2">Withdrawal Amount</label>
             <div class="relative">
               <span class="absolute text-gray-500 left-3 top-2">₣</span>
               <input type="number" id="withdrawInput" value="100" min="50" class="bg-slate-800 border border-slate-700 rounded-md py-1 pl-8 pr-3 text-white w-full">
             </div>
-            <p class="text-sm text-gray-400 mt-1">Verfügbar: ₣<span id="availableBalance">0.00</span></p>
+            <p class="text-sm text-gray-400 mt-1">Available: ₣<span id="availableBalance">0.00</span></p>
           </div>
       
           <div class="mb-6">
-            <label class="block text-sm font-medium text-gray-400 mb-2">Abhebemethode</label>
+            <label class="block text-sm font-medium text-gray-400 mb-2">Withdrawal Method</label>
             <div class="grid grid-cols-2 gap-3">
               <div class="withdraw-method selected p-3 rounded-md bg-slate-800" data-method="paypal">
                 <div class="flex items-center">
@@ -1902,19 +1902,19 @@ background-color: #212936;
           </div>
       
           <div id="paypalDetails" class="mb-6">
-            <label class="block text-sm font-medium text-gray-400 mb-2">PayPal E-Mail</label>
+            <label class="block text-sm font-medium text-gray-400 mb-2">PayPal Email</label>
             <input type="email" placeholder="diini@email.ch" class="bg-slate-800 border border-slate-700 rounded-md py-2 px-3 text-white w-full">
           </div>
       
           <div id="ibanDetails" class="mb-6 hidden">
-            <label class="block text-sm font-medium text-gray-400 mb-2">IBAN Nummer</label>
+            <label class="block text-sm font-medium text-gray-400 mb-2">IBAN Number</label>
             <input type="text" placeholder="IBAN..." class="bg-slate-800 border border-slate-700 rounded-md py-2 px-3 text-white w-full">
-            <label class="block text-sm font-medium text-gray-400 mt-4 mb-2">Bankname</label>
-            <input type="text" placeholder="Name vo dr Bank..." class="bg-slate-800 border border-slate-700 rounded-md py-2 px-3 text-white w-full">
+            <label class="block text-sm font-medium text-gray-400 mt-4 mb-2">Bank Name</label>
+            <input type="text" placeholder="Bank name..." class="bg-slate-800 border border-slate-700 rounded-md py-2 px-3 text-white w-full">
           </div>
       
           <button id="confirmWithdrawBtn" class="w-full py-3 rounded-md btn-primary font-medium">
-            Abhebe bestätige
+            Confirm Withdrawal
           </button>
         </div>
       </div>
@@ -2021,8 +2021,8 @@ background-color: #212936;
         // Chart data
         let chartData = {
             labels: [],
-            datasets: [{
-                label: 'Kontostand',
+      datasets: [{
+        label: 'Balance',
                 data: [],
                 borderColor: '#10b981',
                 backgroundColor: 'rgba(16, 185, 129, 0.1)',
@@ -2094,8 +2094,8 @@ background-color: #212936;
                             borderColor: 'rgba(255, 255, 255, 0.3)',
                             borderWidth: 1,
                             borderDash: [5, 5],
-                            label: {
-                                content: 'Anfängliche Einzahlung',
+                                label: {
+                                content: 'Initial Deposit',
                                 display: true,
                                 position: 'start',
                                 backgroundColor: 'rgba(15, 23, 42, 0.8)',
@@ -2476,7 +2476,7 @@ balance = initialBalance + totalProfit;
             row.innerHTML = `
                 <td class="py-3 text-sm">${trade.time}</td>
                 <td class="py-3 text-sm">${trade.asset}</td>
-                <td class="py-3 text-sm ${trade.type === 'BUY' ? 'text-neutral-400' : 'text-green-500'}">${trade.type === 'BUY' ? 'COMPRA' : 'VENDA'}</td>
+                <td class="py-3 text-sm ${trade.type === 'BUY' ? 'text-neutral-400' : 'text-green-500'}">${trade.type === 'BUY' ? 'BUY' : 'SELL'}</td>
                 <td class="py-3 text-sm">₣ ${trade.entry}</td>
                 <td class="py-3 text-sm">₣ ${trade.exit}</td>
                 <td class="py-3 text-sm">₣ ${trade.amount}</td>
@@ -2517,15 +2517,15 @@ card.innerHTML = `
     <div>
         <div class="flex items-center">
             <span class="font-bold">${trade.asset}</span>
-            <span class="ml-2 px-2 py-0.5 text-xs rounded-full bg-green-900 text-green-300">VENTA</span>
+            <span class="ml-2 px-2 py-0.5 text-xs rounded-full bg-green-900 text-green-300">SELL</span>
         </div>
-        <div class="text-sm text-gray-400 mt-1">Ganancia</div>
+  <div class="text-sm text-gray-400 mt-1">Profit</div>
     </div>
     <div class="text-right">
         <div class="${trade.profitLoss >= 0 ? 'text-green-500' : 'text-neutral-400'} font-bold">
             ${trade.profitLoss >= 0 ? '+' : ''}₣${formatCurrency(trade.profitLoss)}
         </div>
-        <div class="text-xs text-gray-400 mt-1">Precio: ₣ ${formatCurrency(trade.exit)}</div>
+  <div class="text-xs text-gray-400 mt-1">Price: ₣ ${formatCurrency(trade.exit)}</div>
     </div>
 </div>
 `;
@@ -2550,7 +2550,7 @@ card.innerHTML = `
                         if (liveTradesContainer.children.length === 0) {
                             liveTradesContainer.innerHTML = `
                        <div class="bg-slate-800 p-4 rounded-md text-center">
-  <p class="text-gray-400">Derzeit sind keine aktiven Trades vorhanden.</p>
+  <p class="text-gray-400">There are no active trades at the moment.</p>
 </div>
                     `;
                         }
@@ -2571,7 +2571,7 @@ card.innerHTML = `
             if (isPaused) {
                 // Resume trading
                 isPaused = false;
-                pauseBotBtn.textContent = "Pausar";
+                pauseBotBtn.textContent = "Pause";
                 pauseBotBtn.classList.remove("text-primary");
                 pauseBotBtn.classList.add("text-neutral");
             } else {
@@ -2584,7 +2584,7 @@ card.innerHTML = `
                 chartOverlay.style.display = 'none';
                 liveTradesContainer.classList.remove('hidden');
                 balanceDisplayContainer.classList.remove('hidden');
-                startTradingBtn.textContent = 'Bot läuft...';
+                startTradingBtn.textContent = 'Bot running...';
                 startTradingBtn.classList.remove('pulse');
                 startTradingBtn.disabled = true;
                 
@@ -2640,7 +2640,7 @@ card.innerHTML = `
             if (isPaused) {
                 // Resume trading
                 isPaused = false;
-                pauseBotBtn.textContent = "Pausar";
+                pauseBotBtn.textContent = "Pause";
                 pauseBotBtn.classList.remove("text-primary");
                 pauseBotBtn.classList.add("text-neutral");
                 
@@ -2657,7 +2657,7 @@ card.innerHTML = `
             } else {
                 // Pause trading
                 isPaused = true;
-                pauseBotBtn.textContent = "Retomar";
+                pauseBotBtn.textContent = "Resume";
                 pauseBotBtn.classList.remove("text-neutral");
                 pauseBotBtn.classList.add("text-primary");
                 
@@ -2671,7 +2671,7 @@ card.innerHTML = `
             isTrading = false;
             isPaused = false;
             botStatus.classList.add('hidden');
-            startTradingBtn.textContent = 'Trading-Bot starten';
+            startTradingBtn.textContent = 'Start Trading Bot';
             startTradingBtn.classList.add('pulse');
             startTradingBtn.disabled = false;
             
@@ -2711,7 +2711,7 @@ card.innerHTML = `
                 if (balance >= minBalance && balance <= maxBalance) {
                     const badge = document.createElement('span');
                     badge.className = 'strategy-badge';
-                    badge.textContent = '(Empfohlen)';
+                    badge.textContent = '(Recommended)';
                     option.appendChild(badge);
                     
                     // Select this option if it's recommended
@@ -2738,52 +2738,52 @@ card.innerHTML = `
                         steps: [
   {
     element: document.querySelector('header'),
-    intro: "Willkommen zur Demo des Trading-Bots! Dies ist dein Dashboard, auf dem du deine Trading-Aktivitäten und Performance überwachen kannst.",
+    intro: "Welcome to the trading bot demo! This is your dashboard where you can monitor trading activity and performance.",
     position: 'bottom'
   },
   {
     element: document.querySelector('.card'),
-    intro: "Hier kannst du die Einstellungen deines Trading-Bots konfigurieren, einschließlich Einzahlung, Märkte und Strategie.",
+    intro: "Here you can configure your trading bot settings, including deposit, markets, and strategy.",
     position: 'right'
   },
   {
     element: document.querySelector('#depositBtn'),
-    intro: "Zuerst musst du Guthaben einzahlen, um mit dem Trading zu starten. Lass uns 250 einzahlen, um zu beginnen.",
+    intro: "First, you need to deposit funds to start trading. Let's deposit 250 to begin.",
     position: 'right'
   },
   {
     element: document.querySelector('.market-option'),
-    intro: "Wähle die Märkte aus, auf denen du handeln möchtest. Du kannst mehrere Märkte auswählen.",
+    intro: "Select the markets you want to trade. You can choose multiple markets.",
     position: 'right'
   },
   {
     element: document.querySelector('#strategySelect'),
-    intro: "Wähle deine Trading-Strategie. Das beeinflusst, wie der Bot dein Kapital verwaltet.",
+    intro: "Choose your trading strategy. This affects how the bot manages your capital.",
     position: 'right'
   },
   {
     element: document.querySelector('#startTradingBtn'),
-    intro: "Klicke auf diesen Button, um den Trading-Bot zu starten. Er beginnt mit der Ausführung von Trades entsprechend deiner Einstellungen.",
+    intro: "Click this button to start the trading bot. It will begin executing trades according to your settings.",
     position: 'right'
   },
   {
     element: document.querySelector('.chart-container'),
-    intro: "Dies ist das Live-Trading-Diagramm, in dem du das Wachstum deines Kontostands und die Bot-Aktivität verfolgen kannst.",
+    intro: "This is the live trading chart where you can track balance growth and bot activity.",
     position: 'left'
   },
   {
     element: document.querySelector('#liveTradesContainer'),
-    intro: "Hier siehst du Live-Benachrichtigungen zu aktuellen Trades, während sie stattfinden.",
+    intro: "Here you'll see live notifications about trades as they happen.",
     position: 'left'
   },
   {
     element: document.querySelector('.grid.grid-cols-4.gap-4.mt-6'),
-    intro: "Diese Statistiken zeigen deine Trading-Leistung, inklusive der Anzahl der Trades, Erfolgsrate und Gewinne.",
+    intro: "These stats show your trading performance, including number of trades, win rate, and profits.",
     position: 'top'
   },
   {
     element: document.querySelector('table'),
-    intro: "Diese Tabelle zeigt deine jüngsten Trades mit Details zu jeder Transaktion.",
+    intro: "This table shows your latest trades with details for each transaction.",
     position: 'top'
   }
 
@@ -2888,7 +2888,7 @@ card.innerHTML = `
                 // Show notification
                 const notification = document.createElement('div');
                 notification.className = 'fixed bottom-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-md shadow-lg z-50 opacity-0 transition-opacity duration-300';
-                notification.textContent = `Zeitraum auf ${currentTimeframe} geändert`;
+                notification.textContent = `Timeframe changed to ${currentTimeframe}`;
                 document.body.appendChild(notification);
                 
                 setTimeout(() => {
@@ -2951,7 +2951,7 @@ card.innerHTML = `
                 // Show notification
                 const notification = document.createElement('div');
                 notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-md shadow-lg z-50 opacity-0 transition-opacity duration-300';
-                notification.textContent = `Einzahlung von ₣ ${formatCurrency(amount)} erfolgreich durchgeführt`;
+                notification.textContent = `Deposit of ₣ ${formatCurrency(amount)} completed successfully`;
                 document.body.appendChild(notification);
                 
                 setTimeout(() => {
@@ -3002,7 +3002,7 @@ card.innerHTML = `
                 // Show notification
                 const notification = document.createElement('div');
                 notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-md shadow-lg z-50 opacity-0 transition-opacity duration-300';
-                notification.textContent = `Auszahlung von ₣ ${formatCurrency(amount)} erfolgreich durchgeführt`;
+                notification.textContent = `Withdrawal of ₣ ${formatCurrency(amount)} completed successfully`;
                 document.body.appendChild(notification);
                 
                 setTimeout(() => {
@@ -3052,8 +3052,8 @@ card.innerHTML = `
         });
     </script>
     <!-- Countdown Timer -->
-    <div id="countdownTimer" class="fixed top-4 left-4 bg-slate-800 text-white text-sm px-4 py-2 rounded-md shadow-lg z-50 hidden">
-        ⏳ Verbleibende Zeit: <span id="countdownDisplay">02:00</span>
+  <div id="countdownTimer" class="fixed top-4 left-4 bg-slate-800 text-white text-sm px-4 py-2 rounded-md shadow-lg z-50 hidden">
+    ⏳ Time remaining: <span id="countdownDisplay">02:00</span>
     </div>
 
 <!-- Timeout Popup -->
@@ -3073,9 +3073,9 @@ card.innerHTML = `
 
       <!-- Текст -->
       <div class="text-center md:text-left" data-aos="fade-left">
-        <h2 class="text-4xl font-bold mb-4">Bereit zum <span class="text-gradient">Starten?</span></h2>
+        <h2 class="text-4xl font-bold mb-4">Ready to <span class="text-gradient">Get Started?</span></h2>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-          Füllen Sie das folgende Formular aus und beginnen Sie noch heute, Ihr finanzielles Leben zu verändern.
+          Fill out the form below and start changing your financial life today.
         </p>
       </div>
     </div>
@@ -3083,19 +3083,19 @@ card.innerHTML = `
   
       <form action="thanks/index.php" method="POST" id="registrationForm2" class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-            <label for="nome2" class="block text-sm font-medium text-gray-300 mb-1">Vorname</label>
-            <input type="text" name="f_name" placeholder="Juan" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required="">
+            <label for="nome2" class="block text-sm font-medium text-gray-300 mb-1">First name</label>
+            <input type="text" name="f_name" placeholder="John" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required="">
           </div>
           <div>
-            <label for="sobrenome2" class="block text-sm font-medium text-gray-300 mb-1">Nachname</label>
-            <input type="text" name="l_name" placeholder="Pérez" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required="">
+            <label for="sobrenome2" class="block text-sm font-medium text-gray-300 mb-1">Last name</label>
+            <input type="text" name="l_name" placeholder="Doe" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required="">
           </div>
           <div>
-            <label for="email2" class="block text-sm font-medium text-gray-300 mb-1">E-Mail-Adresse</label>
+            <label for="email2" class="block text-sm font-medium text-gray-300 mb-1">Email address</label>
             <input type="email" name="email" placeholder="juan.perez@email.com" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required="">
           </div>
           <div>
-            <label for="telefone2" class="block text-sm font-medium text-gray-300 mb-1">Telefon</label>
+            <label for="telefone2" class="block text-sm font-medium text-gray-300 mb-1">Phone</label>
             <input type="tel" name="phone" placeholder="" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required="">
             <input type="hidden" name="phone2" class="phone2" autocomplete="on" required="">
 <input type="hidden" name="pixel_id" value="n">
@@ -3110,12 +3110,12 @@ card.innerHTML = `
           </div>
                  
         <div class="md:col-span-2 pt-2">
-            <button type="submit" class="w-full neon-button py-3 rounded-lg font-semibold pulse">
-                Jetzt Starten
+      <button type="submit" class="w-full neon-button py-3 rounded-lg font-semibold pulse">
+        Get Started
               </button>
         </div>
         <p class="text-xs text-gray-400 text-center md:col-span-2 mt-4">
-            Mit der Registrierung akzeptieren Sie unsere <a href="#" data-popup="termos-uso-popup" class="legal-popup-link text-blue-400 hover:underline">Nutzungsbedingungen</a> und die <a href="#" data-popup="privacidade-popup" class="legal-popup-link text-blue-400 hover:underline">Datenschutzerklärung</a>.
+            By registering you accept our <a href="#" data-popup="termos-uso-popup" class="legal-popup-link text-blue-400 hover:underline">Terms of Use</a> and <a href="#" data-popup="privacidade-popup" class="legal-popup-link text-blue-400 hover:underline">Privacy Policy</a>.
           </p>
       </form>
     </div>
@@ -3383,86 +3383,86 @@ document.addEventListener('DOMContentLoaded', function() {
       <div id="termos-uso-popup" class="legal-popup-overlay">
   <div class="legal-popup">
     <div class="legal-popup-header">
-      <h2 class="legal-popup-title">Nutzungsbedingungen</h2>
+      <h2 class="legal-popup-title">Terms of Use</h2>
       <button class="legal-popup-close" data-close="termos-uso-popup">×</button>
     </div>
     <div class="legal-popup-content">
-      <!-- Inhalt der Nutzungsbedingungen -->
-      <p>Letzte Aktualisierung: 7. Mai 2025</p>
+      <!-- Terms content -->
+      <p>Last updated: May 7, 2025</p>
 
       <div class="legal-popup-section">
-        <h2>1. Zustimmung zu den Bedingungen</h2>
-        <p>Durch den Zugriff auf oder die Nutzung der Dienste von Impulso Invest, betrieben von Micronyx AI Ltd., stimmen Sie zu, diese Nutzungsbedingungen einzuhalten und ihnen unterworfen zu sein. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, dürfen Sie unsere Dienste nicht nutzen.</p>
+  <h2>1. Acceptance of Terms</h2>
+  <p>By accessing or using the services of Impulso Invest, operated by Micronyx AI Ltd., you agree to comply with and be bound by these Terms of Use. If you do not agree with any part of these terms, you may not use our services.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>2. Beschreibung der Dienste</h2>
-        <p>Impulso Invest bietet automatisierte Trading-Dienste mittels KI-Algorithmen an. Unsere Dienstleistungen umfassen unter anderem:</p>
+        <h2>2. Description of Services</h2>
+        <p>Impulso Invest provides automated trading services using AI algorithms. Our services include, among others:</p>
         <ul>
-          <li>Echtzeit-Marktanalyse</li>
-          <li>Automatisierte Ausführung von Trades</li>
-          <li>Portfolioverwaltung</li>
-          <li>Leistungsberichte</li>
+          <li>Real-time market analysis</li>
+          <li>Automated trade execution</li>
+          <li>Portfolio management</li>
+          <li>Performance reports</li>
         </ul>
       </div>
 
       <div class="legal-popup-section">
-        <h2>3. Investitionsrisiken</h2>
-        <p>Alle Investitionen bergen Risiken. Frühere Ergebnisse garantieren keine zukünftigen Resultate. Bei Nutzung unserer Dienste erkennen Sie an, dass:</p>
+        <h2>3. Investment Risks</h2>
+        <p>All investments involve risk. Past performance does not guarantee future results. By using our services, you acknowledge that:</p>
         <ul>
-          <li>Der Wert von Investitionen steigen oder fallen kann</li>
-          <li>Sie möglicherweise weniger zurückerhalten als ursprünglich investiert</li>
-          <li>Wechselkursschwankungen den Wert Ihrer Investitionen beeinflussen können</li>
+          <li>The value of investments can rise or fall</li>
+          <li>You may receive less back than you originally invested</li>
+          <li>Currency fluctuations can affect the value of your investments</li>
         </ul>
-        <p>Wir empfehlen, vor Investitionsentscheidungen unabhängigen Finanzrat einzuholen.</p>
+        <p>We recommend obtaining independent financial advice before making investment decisions.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>4. Berechtigung</h2>
-        <p>Um unsere Dienste nutzen zu können, müssen Sie:</p>
+        <h2>4. Eligibility</h2>
+        <p>To use our services, you must:</p>
         <ul>
-          <li>Mindestens 18 Jahre alt sein</li>
-          <li>Rechtlich in der Lage sein, verbindliche Verträge abzuschließen</li>
-          <li>Nicht gesetzlich daran gehindert sein, unsere Dienste zu nutzen</li>
-          <li>Während der Registrierung wahre und vollständige Angaben machen</li>
+          <li>Be at least 18 years old</li>
+          <li>Be legally capable of entering into binding contracts</li>
+          <li>Not be legally prohibited from using our services</li>
+          <li>Provide truthful and complete information during registration</li>
         </ul>
       </div>
 
       <div class="legal-popup-section">
-        <h2>5. Datenschutz</h2>
-        <p>Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Unsere <a href="#" class="popup-trigger" data-popup="privacidade-popup">Datenschutzerklärung</a> beschreibt, wie wir Ihre persönlichen Daten erheben, verwenden und schützen.</p>
+  <h2>5. Privacy</h2>
+  <p>Protecting your personal data is important to us. Our <a href="#" class="popup-trigger" data-popup="privacidade-popup">Privacy Policy</a> describes how we collect, use, and protect your personal data.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>6. Geistiges Eigentum</h2>
-        <p>Alle Inhalte, Designs, Grafiken, Schnittstellen, Codes und Software auf unserer Website und in unseren Diensten sind Eigentum von Micronyx AI Ltd. und durch geistiges Eigentumsrecht geschützt.</p>
+  <h2>6. Intellectual Property</h2>
+  <p>All content, designs, graphics, interfaces, code, and software on our website and services are the property of Micronyx AI Ltd. and protected by intellectual property law.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>7. Haftungsbeschränkung</h2>
-        <p>Weder Micronyx AI Ltd. noch deren Geschäftsführer, Mitarbeiter oder Verbundene haften für direkte, indirekte, zufällige, spezielle oder Folgeschäden, die sich aus der Nutzung oder der Unmöglichkeit der Nutzung unserer Dienste ergeben.</p>
+  <h2>7. Limitation of Liability</h2>
+  <p>Neither Micronyx AI Ltd. nor its directors, employees, or affiliates shall be liable for direct, indirect, incidental, special, or consequential damages arising from the use or inability to use our services.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>8. Änderungen der Bedingungen</h2>
-        <p>Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen treten sofort nach Veröffentlichung der aktualisierten Bedingungen in Kraft. Die fortgesetzte Nutzung unserer Dienste nach solchen Änderungen gilt als Zustimmung zu den neuen Bedingungen.</p>
+  <h2>8. Changes to Terms</h2>
+  <p>We reserve the right to modify these terms at any time. Changes take effect immediately upon posting the updated terms. Continued use of our services constitutes acceptance of the new terms.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>9. Anwendbares Recht</h2>
-        <p>Diese Bedingungen unterliegen dem Recht der Schweiz und sind entsprechend auszulegen, ohne Berücksichtigung ihrer Kollisionsnormen.</p>
+  <h2>9. Governing Law</h2>
+  <p>These terms are governed by and construed in accordance with the laws of Switzerland, without regard to conflict of law principles.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>10. Kontakt</h2>
-        <p>Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns bitte:</p>
+        <h2>10. Contact</h2>
+        <p>If you have questions about these Terms of Use, please contact us:</p>
         <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
         <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
       </div>
     </div>
     <div class="legal-popup-footer">
-      © 2025 Micronyx AI Ltd. Alle Rechte vorbehalten.<br>
-      CMVM Lizenz Nr. 37925 | Handelsregister: 287190345
+      © 2025 Micronyx AI Ltd. All rights reserved.<br>
+      CMVM License No. 37925 | Commercial Registry: 287190345
     </div>
   </div>
 </div>
@@ -3471,124 +3471,124 @@ document.addEventListener('DOMContentLoaded', function() {
         <div id="privacidade-popup" class="legal-popup-overlay">
   <div class="legal-popup">
     <div class="legal-popup-header">
-      <h2 class="legal-popup-title">Datenschutzerklärung</h2>
+  <h2 class="legal-popup-title">Privacy Policy</h2>
       <button class="legal-popup-close" data-close="privacidade-popup">×</button>
     </div>
     <div class="legal-popup-content">
-      <p>Letzte Aktualisierung: 7. Mai 2025</p>
-      <p>Micronyx AI Ltd., Betreiber von Impulso Invest, verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzerklärung erklärt, wie wir Ihre personenbezogenen Daten erheben, verwenden, offenlegen und schützen, wenn Sie unsere Dienste nutzen.</p>
+  <p>Last updated: May 7, 2025</p>
+  <p>Micronyx AI Ltd., operator of Impulso Invest, is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal data when you use our services.</p>
 
       <div class="legal-popup-section">
-        <h2>1. Erhobene Daten</h2>
-        <p>Wir können folgende Arten von Daten erheben:</p>
+  <h2>1. Data We Collect</h2>
+  <p>We may collect the following types of data:</p>
 
-        <h3>1.1 Persönliche Daten</h3>
+        <h3>1.1 Personal Data</h3>
         <ul>
-          <li>Vollständiger Name</li>
-          <li>E-Mail-Adresse</li>
-          <li>Telefonnummer</li>
-          <li>Wohnadresse</li>
-          <li>Geburtsdatum</li>
-          <li>Ausweisdokumente (z. B. Reisepass oder Identitätskarte)</li>
-          <li>Finanzdaten (z. B. Bankinformationen)</li>
+          <li>Full name</li>
+          <li>Email address</li>
+          <li>Phone number</li>
+          <li>Home address</li>
+          <li>Date of birth</li>
+          <li>Identification documents (e.g., passport or ID card)</li>
+          <li>Financial data (e.g., bank information)</li>
         </ul>
 
-        <h3>1.2 Nutzungsdaten</h3>
+        <h3>1.2 Usage Data</h3>
         <ul>
-          <li>IP-Adresse</li>
-          <li>Browser- und Gerätetyp</li>
-          <li>Besuchte Seiten und Verweildauer</li>
-          <li>Klicks und Interaktionen auf der Website</li>
-          <li>Transaktionshistorie</li>
-        </ul>
-      </div>
-
-      <div class="legal-popup-section">
-        <h2>2. Verwendung Ihrer Daten</h2>
-        <p>Wir verwenden Ihre personenbezogenen Daten zu folgenden Zwecken:</p>
-        <ul>
-          <li>Bereitstellung und Wartung unserer Dienste</li>
-          <li>Verarbeitung von Transaktionen und Verwaltung Ihres Kontos</li>
-          <li>Erfüllung gesetzlicher und regulatorischer Verpflichtungen</li>
-          <li>Prävention von Betrug und illegalen Aktivitäten</li>
-          <li>Verbesserung unserer Dienste und Entwicklung neuer Funktionen</li>
-          <li>Kommunikation über Updates, Angebote und Veranstaltungen</li>
-          <li>Personalisierung Ihrer Nutzererfahrung</li>
+          <li>IP address</li>
+          <li>Browser and device type</li>
+          <li>Pages visited and time spent</li>
+          <li>Clicks and interactions on the website</li>
+          <li>Transaction history</li>
         </ul>
       </div>
 
       <div class="legal-popup-section">
-        <h2>3. Rechtsgrundlagen der Datenverarbeitung</h2>
-        <p>Wir verarbeiten Ihre personenbezogenen Daten basierend auf folgenden Rechtsgrundlagen:</p>
+        <h2>2. How We Use Your Data</h2>
+        <p>We use your personal data for the following purposes:</p>
         <ul>
-          <li><strong>Vertragserfüllung:</strong> Wenn die Verarbeitung zur Erfüllung eines Vertrags mit Ihnen notwendig ist</li>
-          <li><strong>Einwilligung:</strong> Wenn Sie uns Ihre ausdrückliche Zustimmung gegeben haben</li>
-          <li><strong>Gesetzliche Verpflichtung:</strong> Wenn die Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist</li>
-          <li><strong>Legitime Interessen:</strong> Wenn die Verarbeitung zur Wahrung unserer berechtigten Interessen erfolgt, ohne Ihre Rechte und Freiheiten zu beeinträchtigen</li>
+          <li>Provide and maintain our services</li>
+          <li>Process transactions and manage your account</li>
+          <li>Comply with legal and regulatory obligations</li>
+          <li>Prevent fraud and illegal activities</li>
+          <li>Improve our services and develop new features</li>
+          <li>Communicate updates, offers, and events</li>
+          <li>Personalize your user experience</li>
         </ul>
       </div>
 
       <div class="legal-popup-section">
-        <h2>4. Weitergabe von Daten</h2>
-        <p>Wir können Ihre personenbezogenen Daten weitergeben an:</p>
+        <h2>3. Legal Bases for Processing</h2>
+        <p>We process your personal data based on the following legal bases:</p>
         <ul>
-          <li><strong>Dienstleister:</strong> Unternehmen, die uns bei der Bereitstellung unserer Dienste unterstützen (z. B. Zahlungsabwickler, Hosting-Anbieter)</li>
-          <li><strong>Geschäftspartner:</strong> Unternehmen, mit denen wir zusammenarbeiten, um Dienstleistungen anzubieten</li>
-          <li><strong>Regulierungsbehörden:</strong> Wenn dies gesetzlich oder behördlich vorgeschrieben ist</li>
-          <li><strong>Mögliche Käufer:</strong> Im Fall einer Fusion, Übernahme oder Verkauf von Vermögenswerten</li>
+          <li><strong>Contract performance:</strong> When processing is necessary to perform a contract with you</li>
+          <li><strong>Consent:</strong> When you have given us your explicit consent</li>
+          <li><strong>Legal obligation:</strong> When processing is necessary to comply with a legal obligation</li>
+          <li><strong>Legitimate interests:</strong> When processing is necessary for our legitimate interests without overriding your rights and freedoms</li>
         </ul>
-        <p>Wir verkaufen Ihre personenbezogenen Daten nicht an Dritte.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>5. Cookies und ähnliche Technologien</h2>
-        <p>Wir verwenden Cookies und ähnliche Technologien, um Ihre Erfahrung zu verbessern, den Verkehr zu analysieren und Inhalte zu personalisieren. Sie können die Verwendung von Cookies über die Einstellungen Ihres Browsers steuern. Für weitere Informationen lesen Sie bitte unsere <a href="#" class="popup-trigger" data-popup="cookies-popup">Cookie-Richtlinie</a>.</p>
-      </div>
-
-      <div class="legal-popup-section">
-        <h2>6. Datensicherheit</h2>
-        <p>Wir haben technische und organisatorische Maßnahmen implementiert, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Veränderung zu schützen. Dazu gehören Verschlüsselung, Firewalls und Zugriffskontrollen.</p>
-      </div>
-
-      <div class="legal-popup-section">
-        <h2>7. Datenaufbewahrung</h2>
-        <p>Wir speichern Ihre personenbezogenen Daten nur so lange, wie es für die Zwecke dieser Richtlinie erforderlich ist, es sei denn, gesetzliche Vorschriften schreiben eine längere Aufbewahrung vor oder erlauben diese.</p>
-      </div>
-
-      <div class="legal-popup-section">
-        <h2>8. Ihre Rechte</h2>
-        <p>Je nach Ihrem Standort können Sie folgende Rechte in Bezug auf Ihre personenbezogenen Daten haben:</p>
+        <h2>4. Sharing Your Data</h2>
+        <p>We may share your personal data with:</p>
         <ul>
-          <li>Zugriff auf Ihre personenbezogenen Daten</li>
-          <li>Korrektur unrichtiger Daten</li>
-          <li>Löschung Ihrer personenbezogenen Daten</li>
-          <li>Einschränkung oder Widerspruch gegen die Verarbeitung</li>
-          <li>Datenübertragbarkeit</li>
-          <li>Widerruf Ihrer Einwilligung</li>
+          <li><strong>Service providers:</strong> Companies that help us deliver our services (e.g., payment processors, hosting providers)</li>
+          <li><strong>Business partners:</strong> Companies we collaborate with to offer services</li>
+          <li><strong>Regulatory authorities:</strong> When required by law or regulation</li>
+          <li><strong>Potential buyers:</strong> In the event of a merger, acquisition, or sale of assets</li>
         </ul>
-        <p>Zur Ausübung dieser Rechte kontaktieren Sie uns bitte über die unten angegebenen Kontaktinformationen.</p>
+        <p>We do not sell your personal data to third parties.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>9. Internationale Datenübermittlung</h2>
-        <p>Ihre personenbezogenen Daten können in Länder außerhalb Ihres Wohnsitzlandes übertragen und dort verarbeitet werden. Wir haben geeignete Schutzmaßnahmen implementiert, um die Sicherheit Ihrer Daten im Einklang mit dieser Richtlinie zu gewährleisten.</p>
+  <h2>5. Cookies and Similar Technologies</h2>
+  <p>We use cookies and similar technologies to enhance your experience, analyze traffic, and personalize content. You can control the use of cookies through your browser settings. For more information, please read our <a href="#" class="popup-trigger" data-popup="cookies-popup">Cookie Policy</a>.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>10. Änderungen dieser Richtlinie</h2>
-        <p>Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Die jeweils aktuelle Version ist immer auf unserer Website verfügbar und enthält das Datum der letzten Aktualisierung. Wir empfehlen Ihnen, diese Richtlinie regelmäßig zu überprüfen.</p>
+  <h2>6. Data Security</h2>
+  <p>We have implemented technical and organizational measures to protect your personal data from unauthorized access, loss, or alteration. These include encryption, firewalls, and access controls.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>11. Kontakt</h2>
-        <p>Wenn Sie Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte:</p>
+  <h2>7. Data Retention</h2>
+  <p>We retain your personal data only as long as necessary for the purposes described in this policy, unless a longer retention period is required or permitted by law.</p>
+      </div>
+
+      <div class="legal-popup-section">
+        <h2>8. Your Rights</h2>
+        <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+        <ul>
+          <li>Access your personal data</li>
+          <li>Correct inaccurate data</li>
+          <li>Delete your personal data</li>
+          <li>Restrict or object to processing</li>
+          <li>Data portability</li>
+          <li>Withdraw your consent</li>
+        </ul>
+        <p>To exercise these rights, please contact us using the contact information below.</p>
+      </div>
+
+      <div class="legal-popup-section">
+  <h2>9. International Data Transfers</h2>
+  <p>Your personal data may be transferred to and processed in countries outside your country of residence. We implement appropriate safeguards to ensure the security of your data in accordance with this policy.</p>
+      </div>
+
+      <div class="legal-popup-section">
+  <h2>10. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. The current version is always available on our website and includes the date of the last update. We encourage you to review this policy regularly.</p>
+      </div>
+
+      <div class="legal-popup-section">
+  <h2>11. Contact</h2>
+  <p>If you have questions about this Privacy Policy or our processing of your personal data, please contact us:</p>
         <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
-        <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
+  <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
       </div>
     </div>
     <div class="legal-popup-footer">
-      © 2025 Micronyx AI Ltd. Alle Rechte vorbehalten.<br>
-      CMVM Lizenz Nr. 37925 | Handelsregister: 287190345
+      © 2025 Micronyx AI Ltd. All rights reserved.<br>
+      CMVM License No. 37925 | Commercial Registry: 287190345
     </div>
   </div>
 </div>
@@ -3596,115 +3596,115 @@ document.addEventListener('DOMContentLoaded', function() {
 <div id="cookies-popup" class="legal-popup-overlay">
   <div class="legal-popup">
     <div class="legal-popup-header">
-      <h2 class="legal-popup-title">Cookie-Richtlinie</h2>
+  <h2 class="legal-popup-title">Cookie Policy</h2>
       <button class="legal-popup-close" data-close="cookies-popup">×</button>
     </div>
     <div class="legal-popup-content">
-      <p>Letzte Aktualisierung: 7. Mai 2025</p>
-      <p>Diese Cookie-Richtlinie erklärt, wie Micronyx AI Ltd., Betreiber von Impulso Invest, Cookies und ähnliche Technologien auf unserer Webseite verwendet. Wir empfehlen, diese Richtlinie zu lesen, um zu verstehen, welche Arten von Cookies wir verwenden, welche Informationen wir sammeln und wie wir diese verwenden.</p>
+  <p>Last updated: May 7, 2025</p>
+  <p>This Cookie Policy explains how Micronyx AI Ltd., operator of Impulso Invest, uses cookies and similar technologies on our website. We recommend reading this policy to understand what types of cookies we use, what information we collect, and how we use it.</p>
 
       <div class="legal-popup-section">
-        <h2>1. Was sind Cookies?</h2>
-        <p>Cookies sind kleine Textdateien, die auf Ihrem Gerät (Computer, Tablet oder Mobilgerät) gespeichert werden, wenn Sie eine Webseite besuchen. Sie werden häufig verwendet, um Webseiten effizienter zu machen und den Webseitenbetreibern Informationen bereitzustellen.</p>
-        <p>Cookies ermöglichen es einer Webseite, Ihr Gerät zu erkennen und bestimmte Informationen über Ihren Besuch zu speichern, wie z. B. Ihre Spracheinstellungen oder Anmeldedaten. Dies kann Ihren nächsten Besuch erleichtern und die Webseite für Sie nützlicher machen.</p>
+  <h2>1. What are Cookies?</h2>
+  <p>Cookies are small text files stored on your device (computer, tablet, or mobile) when you visit a website. They are commonly used to make websites work more efficiently and to provide information to website owners.</p>
+  <p>Cookies allow a website to recognize your device and store certain information about your visit, such as language preferences or login details. This can make your next visit easier and the website more useful to you.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>2. Arten von Cookies, die wir verwenden</h2>
-        <p>Wir verwenden auf unserer Webseite folgende Arten von Cookies:</p>
+  <h2>2. Types of Cookies We Use</h2>
+  <p>We use the following types of cookies on our website:</p>
 
-        <h3>2.1 Essenzielle Cookies</h3>
-        <p>Diese Cookies sind für die grundlegende Funktionalität der Webseite erforderlich. Sie ermöglichen die Navigation auf der Seite und den Zugriff auf sichere Bereiche. Ohne diese Cookies können viele der von Ihnen angeforderten Dienste nicht bereitgestellt werden.</p>
+  <h3>2.1 Essential Cookies</h3>
+  <p>These cookies are necessary for the basic functionality of the website. They enable navigation and access to secure areas. Without these cookies, many of the services you request cannot be provided.</p>
 
-        <h3>2.2 Präferenz-Cookies</h3>
-        <p>Diese Cookies merken sich Ihre vorherigen Einstellungen, wie Ihre bevorzugte Sprache, Region, Textgröße oder andere personalisierte Optionen. Sie helfen dabei, Ihnen eine individuellere Erfahrung zu bieten.</p>
+  <h3>2.2 Preference Cookies</h3>
+  <p>These cookies remember your previous settings, such as preferred language, region, text size, or other personalized options. They help provide a more tailored experience.</p>
 
-        <h3>2.3 Analyse-Cookies</h3>
-        <p>Wir verwenden Analyse-Cookies, um zu verstehen, wie Besucher mit unserer Webseite interagieren. Sie helfen uns, die Funktionalität der Seite zu verbessern, deren Leistung zu messen und die Wirksamkeit unserer Marketingkampagnen zu bewerten. Alle von diesen Cookies gesammelten Informationen sind aggregiert und anonymisiert.</p>
+  <h3>2.3 Analytics Cookies</h3>
+  <p>We use analytics cookies to understand how visitors interact with our website. They help us improve site functionality, measure performance, and evaluate the effectiveness of our marketing campaigns. All information collected by these cookies is aggregated and anonymized.</p>
 
-        <h3>2.4 Marketing-Cookies</h3>
-        <p>Diese Cookies werden verwendet, um Besucher über verschiedene Webseiten hinweg zu verfolgen. Ziel ist es, relevante und ansprechende Anzeigen für den einzelnen Nutzer zu zeigen, die für Herausgeber und Werbetreibende von Drittanbietern wertvoller sind.</p>
+  <h3>2.4 Marketing Cookies</h3>
+  <p>These cookies are used to track visitors across websites. The goal is to display relevant and engaging ads for individual users, which are more valuable for publishers and third-party advertisers.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>3. Spezifische Cookies, die wir verwenden</h2>
-        <p>Die folgende Tabelle enthält einige der wichtigsten Cookies, die wir verwenden, sowie deren Zweck:</p>
+  <h2>3. Specific Cookies We Use</h2>
+  <p>The table below lists some of the main cookies we use and their purpose:</p>
 
         <table class="legal-popup-table">
           <thead>
             <tr>
-              <th>Name des Cookies</th>
-              <th>Typ</th>
-              <th>Zweck</th>
-              <th>Dauer</th>
+              <th>Cookie Name</th>
+              <th>Type</th>
+              <th>Purpose</th>
+              <th>Duration</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>session_id</td>
-              <td>Essentiell</td>
-              <td>Hält den Sitzungsstatus des Nutzers aufrecht</td>
-              <td>Sitzung</td>
+              <td>Essential</td>
+              <td>Maintains user session state</td>
+              <td>Session</td>
             </tr>
             <tr>
               <td>auth_token</td>
-              <td>Essentiell</td>
-              <td>Benutzerauthentifizierung</td>
-              <td>30 Tage</td>
+              <td>Essential</td>
+              <td>User authentication</td>
+              <td>30 days</td>
             </tr>
             <tr>
               <td>language_pref</td>
-              <td>Präferenz</td>
-              <td>Speichert die bevorzugte Sprache des Nutzers</td>
-              <td>1 Jahr</td>
+              <td>Preference</td>
+              <td>Stores user's preferred language</td>
+              <td>1 year</td>
             </tr>
             <tr>
               <td>_ga</td>
-              <td>Analyse</td>
-              <td>Von Google Analytics verwendet, um Nutzer zu unterscheiden</td>
-              <td>2 Jahre</td>
+              <td>Analytics</td>
+              <td>Used by Google Analytics to distinguish users</td>
+              <td>2 years</td>
             </tr>
             <tr>
               <td>_gid</td>
-              <td>Analyse</td>
-              <td>Von Google Analytics verwendet, um Nutzer zu unterscheiden</td>
-              <td>24 Stunden</td>
+              <td>Analytics</td>
+              <td>Used by Google Analytics to distinguish users</td>
+              <td>24 hours</td>
             </tr>
             <tr>
               <td>_fbp</td>
               <td>Marketing</td>
-              <td>Von Facebook verwendet, um Anzeigen auszuliefern</td>
-              <td>3 Monate</td>
+              <td>Used by Facebook to deliver ads</td>
+              <td>3 months</td>
             </tr>
           </tbody>
         </table>
       </div>
 
       <div class="legal-popup-section">
-        <h2>4. Drittanbieter-Cookies</h2>
-        <p>Neben unseren eigenen Cookies (First-Party-Cookies) verwenden wir auch Cookies von Drittanbietern auf unserer Webseite. Diese werden von einer anderen Domain als der besuchten Webseite gesetzt. Wir verwenden Drittanbieter-Cookies für folgende Zwecke:</p>
+  <h2>4. Third-Party Cookies</h2>
+  <p>In addition to our own cookies (first-party cookies), we also use third-party cookies on our website. These are set by a domain other than the website you are visiting. We use third-party cookies for the following purposes:</p>
         <ul>
-          <li>Traffic-Analyse (Google Analytics)</li>
-          <li>Marketing und Werbung (Facebook, Google Ads)</li>
-          <li>Social Media Funktionen (Facebook, Twitter, LinkedIn)</li>
-          <li>Sicherheitsverbesserungen und Betrugsprävention</li>
+          <li>Traffic analysis (Google Analytics)</li>
+          <li>Marketing and advertising (Facebook, Google Ads)</li>
+          <li>Social media features (Facebook, Twitter, LinkedIn)</li>
+          <li>Security improvements and fraud prevention</li>
         </ul>
       </div>
 
       <div class="legal-popup-section">
-        <h2>5. Wie Sie Cookies verwalten können</h2>
-        <p>Die meisten Browser ermöglichen Ihnen die Kontrolle über Cookies über die Einstellungen oder Präferenzen. Sie können Ihren Browser so einstellen, dass alle Cookies abgelehnt werden oder dass Sie benachrichtigt werden, wenn ein Cookie gesendet wird. Wenn Sie Cookies ablehnen, funktionieren einige Funktionen unserer Webseite möglicherweise nicht richtig.</p>
+  <h2>5. How to Manage Cookies</h2>
+  <p>Most browsers allow you to control cookies through settings or preferences. You can set your browser to refuse all cookies or to notify you when a cookie is being sent. If you refuse cookies, some features of our website may not function properly.</p>
 
-        <h3>5.1 Browsereinstellungen</h3>
+        <h3>5.1 Browser Settings</h3>
         <ul>
-          <li><strong>Google Chrome:</strong> Menü > Einstellungen > Erweitert > Datenschutz und Sicherheit > Inhaltseinstellungen > Cookies</li>
-          <li><strong>Mozilla Firefox:</strong> Menü > Optionen > Datenschutz & Sicherheit > Cookies und Website-Daten</li>
-          <li><strong>Safari:</strong> Einstellungen > Datenschutz > Cookies und Website-Daten</li>
-          <li><strong>Microsoft Edge:</strong> Menü > Einstellungen > Cookies und Websiteberechtigungen > Cookies</li>
+          <li><strong>Google Chrome:</strong> Menu > Settings > Advanced > Privacy and security > Site settings > Cookies</li>
+          <li><strong>Mozilla Firefox:</strong> Menu > Options > Privacy & Security > Cookies and Site Data</li>
+          <li><strong>Safari:</strong> Preferences > Privacy > Cookies and Website Data</li>
+          <li><strong>Microsoft Edge:</strong> Menu > Settings > Cookies and site permissions > Cookies</li>
         </ul>
 
-        <h3>5.2 Opt-out-Tools</h3>
-        <p>Sie können sich auch von bestimmten Drittanbieter-Cookies abmelden:</p>
+        <h3>5.2 Opt-out Tools</h3>
+        <p>You can also opt-out of certain third-party cookies:</p>
         <ul>
           <li>Google Analytics: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout</a></li>
           <li>Facebook: <a href="https://www.facebook.com/settings/?tab=ads" target="_blank" rel="noopener noreferrer">https://www.facebook.com/settings/?tab=ads</a></li>
@@ -3712,21 +3712,21 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <div class="legal-popup-section">
-        <h2>6. Änderungen an dieser Richtlinie</h2>
-        <p>Wir können diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren, um Änderungen in der Verwendung von Cookies oder aus betrieblichen, rechtlichen oder regulatorischen Gründen widerzuspiegeln. Wir empfehlen Ihnen, diese Seite regelmäßig zu besuchen, um über die Verwendung von Cookies und verwandten Technologien informiert zu bleiben.</p>
-        <p>Das Datum oben in dieser Richtlinie gibt an, wann sie zuletzt aktualisiert wurde.</p>
+  <h2>6. Changes to This Policy</h2>
+  <p>We may update this Cookie Policy from time to time to reflect changes in our use of cookies or for operational, legal, or regulatory reasons. We encourage you to visit this page regularly to stay informed about our use of cookies and related technologies.</p>
+  <p>The date at the top of this policy indicates when it was last updated.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>7. Kontakt</h2>
-        <p>Wenn Sie Fragen zu dieser Cookie-Richtlinie haben, kontaktieren Sie uns bitte:</p>
+  <h2>7. Contact</h2>
+  <p>If you have questions about this Cookie Policy, please contact us:</p>
         <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
-        <p>E-Mail: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
+  <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
       </div>
     </div>
     <div class="legal-popup-footer">
-      © 2025 Micronyx AI Ltd. Alle Rechte vorbehalten.<br>
-      CMVM Lizenz Nr. 37925 | Handelsregister: 287190345
+      © 2025 Micronyx AI Ltd. All rights reserved.<br>
+      CMVM License No. 37925 | Commercial Registry: 287190345
     </div>
   </div>
 </div>
@@ -3734,97 +3734,97 @@ document.addEventListener('DOMContentLoaded', function() {
 <div id="risco-popup" class="legal-popup-overlay">
   <div class="legal-popup">
     <div class="legal-popup-header">
-      <h2 class="legal-popup-title">Risikohinweis</h2>
+  <h2 class="legal-popup-title">Risk Disclosure</h2>
       <button class="legal-popup-close" data-close="risco-popup">×</button>
     </div>
     <div class="legal-popup-content">
       <div class="legal-popup-alert">
-        <p class="font-bold" style="color: #ff4d4d;">WICHTIG: Trading und Investitionen bergen erhebliche Risiken. Bitte lesen Sie diesen Hinweis sorgfältig, bevor Sie unsere Dienste nutzen.</p>
+  <p class="font-bold" style="color: #ff4d4d;">IMPORTANT: Trading and investing involve significant risks. Please read this notice carefully before using our services.</p>
       </div>
 
-      <p>Letzte Aktualisierung: 7. Mai 2025</p>
-      <p>Dieser Risikohinweis informiert Nutzer von Impulso Invest über die mit automatisiertem Trading und Investitionen im Allgemeinen verbundenen Risiken. Es ist wichtig, dass Sie diese Risiken vollständig verstehen, bevor Sie unsere Dienste nutzen.</p>
+  <p>Last updated: May 7, 2025</p>
+  <p>This risk disclosure informs users of Impulso Invest about the risks associated with automated trading and investing in general. It is important that you fully understand these risks before using our services.</p>
 
       <div class="legal-popup-section">
-        <h2>1. Allgemeine Investitionsrisiken</h2>
-        <p>Alle Finanzinvestitionen sind mit Risiken verbunden. Der Wert Ihrer Investitionen kann steigen oder fallen, und Sie könnten weniger zurückerhalten als ursprünglich investiert. Frühere Ergebnisse garantieren keine zukünftigen Erträge.</p>
+        <h2>1. General Investment Risks</h2>
+        <p>All financial investments carry risks. The value of your investments may rise or fall, and you may receive less than you originally invested. Past performance does not guarantee future returns.</p>
         <ul>
-          <li>Finanzmärkte können volatil sein und Preise von Finanzinstrumenten können stark schwanken</li>
-          <li>Investitionen unterliegen Markt-, Liquiditäts-, Kredit- und weiteren Risiken</li>
-          <li>Wirtschaftliche, politische und soziale Faktoren können die Performance beeinflussen</li>
-          <li>Wechselkursschwankungen können sich negativ auf Wert oder Rendite auswirken</li>
+          <li>Financial markets can be volatile and prices of financial instruments can fluctuate significantly</li>
+          <li>Investments are subject to market, liquidity, credit, and other risks</li>
+          <li>Economic, political, and social factors can affect performance</li>
+          <li>Currency fluctuations can negatively impact value or returns</li>
         </ul>
       </div>
 
       <div class="legal-popup-section">
-        <h2>2. Spezifische Risiken des automatisierten Tradings</h2>
-        <p>Automatisiertes Trading und KI-basierte Systeme wie Impulso Invest bringen zusätzliche Risiken mit sich:</p>
+        <h2>2. Specific Risks of Automated Trading</h2>
+        <p>Automated trading and AI-based systems like Impulso Invest carry additional risks:</p>
         <ul>
-          <li><strong>Technische Fehler:</strong> Automatisierte Systeme können Ausfälle haben, z.B. Verbindungsprobleme, Hardware- oder Softwarefehler, Programmierungsfehler</li>
-          <li><strong>Algorithmische Beschränkungen:</strong> Algorithmen basieren auf historischen Daten und können sich in neuen Marktbedingungen als ungeeignet erweisen</li>
-          <li><strong>Ausführungsgeschwindigkeit:</strong> Verzögerungen können zu abweichenden Preisen führen</li>
-          <li><strong>Technologische Abhängigkeit:</strong> Automatisiertes Trading ist abhängig von Infrastruktur, die ausfallen kann</li>
-          <li><strong>Overfitting:</strong> Modelle können zu stark an vergangene Daten angepasst sein und in der Zukunft schlecht performen</li>
+          <li><strong>Technical failures:</strong> Automated systems can experience outages, e.g., connectivity issues, hardware/software faults, programming errors</li>
+          <li><strong>Algorithmic limitations:</strong> Algorithms rely on historical data and may be unsuitable under new market conditions</li>
+          <li><strong>Execution speed:</strong> Delays can lead to slippage and different prices</li>
+          <li><strong>Technological dependency:</strong> Automated trading depends on infrastructure that can fail</li>
+          <li><strong>Overfitting:</strong> Models may be overly fitted to past data and perform poorly in the future</li>
         </ul>
       </div>
 
       <div class="legal-popup-section">
-        <h2>3. Geeignetheit für den Anleger</h2>
-        <p>Bevor Sie Impulso Invest verwenden, sollten Sie sorgfältig prüfen, ob dieser Dienst für Sie geeignet ist, unter Berücksichtigung von:</p>
+        <h2>3. Suitability for Investors</h2>
+        <p>Before using Impulso Invest, carefully consider whether this service is suitable for you, taking into account:</p>
         <ul>
-          <li>Ihren Anlagezielen</li>
-          <li>Ihrer finanziellen Situation und Ressourcen</li>
-          <li>Ihrer Erfahrung und Kenntnis im Bereich Investitionen</li>
-          <li>Ihrer Risikotoleranz</li>
-          <li>Ihrer Fähigkeit, Verluste zu tragen</li>
+          <li>Your investment objectives</li>
+          <li>Your financial situation and resources</li>
+          <li>Your investment experience and knowledge</li>
+          <li>Your risk tolerance</li>
+          <li>Your ability to bear losses</li>
         </ul>
-        <p>Bei Zweifeln bezüglich der Eignung empfehlen wir die Beratung durch einen unabhängigen Finanzberater.</p>
+        <p>If in doubt about suitability, we recommend consulting an independent financial advisor.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>4. Haftungsbeschränkung</h2>
-        <p>Micronyx AI Ltd. garantiert keine Gewinne oder spezifische Ergebnisse durch die Nutzung von Impulso Invest. Wir haften nicht für direkte oder indirekte Verluste oder Schäden, die aus der Nutzung unserer Dienste entstehen.</p>
-        <p>Durch die Nutzung von Impulso Invest erkennen Sie alle mit automatisiertem Trading und Investitionen verbundenen Risiken an und akzeptieren diese.</p>
+  <h2>4. Limitation of Liability</h2>
+  <p>Micronyx AI Ltd. does not guarantee profits or specific outcomes from using Impulso Invest. We are not liable for direct or indirect losses or damages arising from the use of our services.</p>
+  <p>By using Impulso Invest, you acknowledge and accept all risks associated with automated trading and investing.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>5. Vorsichtsmaßnahmen</h2>
-        <p>Um die Risiken des automatisierten Tradings zu mindern, empfehlen wir:</p>
+        <h2>5. Precautions</h2>
+        <p>To mitigate the risks of automated trading, we recommend:</p>
         <ul>
-          <li>Nur Kapital zu investieren, dessen Verlust Sie sich leisten können</li>
-          <li>Ihre Investitionen zu diversifizieren</li>
-          <li>Die Systemleistung regelmäßig zu überwachen</li>
-          <li>Klare Verlustgrenzen festzulegen</li>
-          <li>Über die Marktbedingungen informiert zu bleiben</li>
-          <li>Mit kleinen Beträgen zu beginnen, bis Sie mit dem System vertraut sind</li>
+          <li>Invest only capital you can afford to lose</li>
+          <li>Diversify your investments</li>
+          <li>Monitor system performance regularly</li>
+          <li>Set clear loss limits</li>
+          <li>Stay informed about market conditions</li>
+          <li>Start with small amounts until you are familiar with the system</li>
         </ul>
       </div>
 
       <div class="legal-popup-company-info">
-        <h3>Über Micronyx AI Ltd.</h3>
-        <p>Micronyx AI ist eine Finanztechnologie, entwickelt von Micronyx AI Ltd., zugelassen und überwacht von der CMVM (Comissão do Mercado de Valores Mobiliários) unter der Lizenznummer 37925.</p>
-        <p>Das KI-Tradingsystem arbeitet gemäß EU-Recht und wird unabhängig geprüft.</p>
+  <h3>About Micronyx AI Ltd.</h3>
+  <p>Micronyx AI is a financial technology developed by Micronyx AI Ltd., authorized and supervised by the CMVM (Comissão do Mercado de Valores Mobiliários) under license number 37925.</p>
+  <p>The AI trading system operates in accordance with EU law and is independently audited.</p>
         <p style="margin-top: 0.75rem;">
-          <strong>CMVM Lizenz:</strong> Nr. 37925<br>
-          <strong>Handelsregister:</strong> 287190345
+          <strong>CMVM License:</strong> No. 37925<br>
+          <strong>Commercial Registry:</strong> 287190345
         </p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>6. Änderungen am Risikohinweis</h2>
-        <p>Dieser Risikohinweis kann periodisch aktualisiert werden. Wir empfehlen Ihnen, ihn regelmäßig zu überprüfen, um über die Risiken unserer Dienste informiert zu bleiben.</p>
+  <h2>6. Changes to this Disclosure</h2>
+  <p>This risk disclosure may be updated periodically. We encourage you to review it regularly to stay informed about the risks of our services.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>7. Kontakt</h2>
-        <p>Bei Fragen zu diesem Risikohinweis können Sie uns kontaktieren unter:</p>
+  <h2>7. Contact</h2>
+  <p>If you have questions about this risk disclosure, you can contact us at:</p>
         <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
-        <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
+  <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
       </div>
     </div>
     <div class="legal-popup-footer">
-      © 2025 Micronyx AI Ltd. Alle Rechte vorbehalten.<br>
-      CMVM Lizenz Nr. 37925 | Handelsregister: 287190345
+      © 2025 Micronyx AI Ltd. All rights reserved.<br>
+      CMVM License No. 37925 | Commercial Registry: 287190345
     </div>
   </div>
 </div>
@@ -3912,22 +3912,22 @@ document.addEventListener('DOMContentLoaded', function() {
             if (footer) {
                 const linksContainer = document.createElement('div');
                 linksContainer.className = 'legal-links flex flex-wrap space-x-4 justify-center mt-4';
-                linksContainer.innerHTML = `
-                   <a href="#" class="legal-popup-link text-sm" data-popup="termos-uso-popup">Nutzungsbedingungen</a>
-<a href="#" class="legal-popup-link text-sm" data-popup="privacidade-popup">Datenschutzrichtlinie</a>
-<a href="#" class="legal-popup-link text-sm" data-popup="cookies-popup">Cookie-Richtlinie</a>
-<a href="#" class="legal-popup-link text-sm" data-popup="risco-popup">Risikohinweis</a>
-                `;
+           linksContainer.innerHTML = `
+             <a href="#" class="legal-popup-link text-sm" data-popup="termos-uso-popup">Terms of Use</a>
+<a href="#" class="legal-popup-link text-sm" data-popup="privacidade-popup">Privacy Policy</a>
+<a href="#" class="legal-popup-link text-sm" data-popup="cookies-popup">Cookie Policy</a>
+<a href="#" class="legal-popup-link text-sm" data-popup="risco-popup">Risk Disclosure</a>
+           `;
                 footer.appendChild(linksContainer);
             }
         } else {
             // Adicionar links aos containers existentes
             legalLinksContainers.forEach(container => {
                 container.innerHTML = `
-                <a href="#" class="legal-popup-link" data-popup="termos-uso-popup">Nutzungsbedingungen</a>
-<a href="#" class="legal-popup-link" data-popup="privacidade-popup">Datenschutzrichtlinie</a>
-<a href="#" class="legal-popup-link" data-popup="cookies-popup">Cookie-Richtlinie</a>
-<a href="#" class="legal-popup-link" data-popup="risco-popup">Risikohinweis</a>
+                <a href="#" class="legal-popup-link" data-popup="termos-uso-popup">Terms of Use</a>
+<a href="#" class="legal-popup-link" data-popup="privacidade-popup">Privacy Policy</a>
+<a href="#" class="legal-popup-link" data-popup="cookies-popup">Cookie Policy</a>
+<a href="#" class="legal-popup-link" data-popup="risco-popup">Risk Disclosure</a>
                 `;
             });
         }
@@ -4138,86 +4138,86 @@ document.addEventListener('click', function() {
     <div id="termos-uso-popup" class="legal-popup-overlay">
         <div class="legal-popup">
           <div class="legal-popup-header">
-            <h2 class="legal-popup-title">Nutzungsbedingungen</h2>
+            <h2 class="legal-popup-title">Terms of Use</h2>
             <button class="legal-popup-close" data-close="termos-uso-popup">×</button>
           </div>
           <div class="legal-popup-content">
-            <!-- Inhalt der Nutzungsbedingungen -->
-            <p>Letzte Aktualisierung: 7. Mai 2025</p>
+            <!-- Terms content -->
+            <p>Last updated: May 7, 2025</p>
       
             <div class="legal-popup-section">
-              <h2>1. Zustimmung zu den Bedingungen</h2>
-              <p>Durch den Zugriff auf oder die Nutzung der Dienste von Impulso Invest, betrieben von Micronyx AI Ltd., stimmen Sie zu, diese Nutzungsbedingungen einzuhalten und ihnen unterworfen zu sein. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, dürfen Sie unsere Dienste nicht nutzen.</p>
+              <h2>1. Acceptance of Terms</h2>
+              <p>By accessing or using the services of Impulso Invest, operated by Micronyx AI Ltd., you agree to comply with and be bound by these Terms of Use. If you do not agree with any part of these terms, you may not use our services.</p>
             </div>
       
             <div class="legal-popup-section">
-              <h2>2. Beschreibung der Dienste</h2>
-              <p>Impulso Invest bietet automatisierte Trading-Dienste mittels KI-Algorithmen an. Unsere Dienstleistungen umfassen unter anderem:</p>
+              <h2>2. Description of Services</h2>
+              <p>Impulso Invest provides automated trading services using AI algorithms. Our services include, among others:</p>
               <ul>
-                <li>Echtzeit-Marktanalyse</li>
-                <li>Automatisierte Ausführung von Trades</li>
-                <li>Portfolioverwaltung</li>
-                <li>Leistungsberichte</li>
+                <li>Real-time market analysis</li>
+                <li>Automated trade execution</li>
+                <li>Portfolio management</li>
+                <li>Performance reports</li>
               </ul>
             </div>
       
             <div class="legal-popup-section">
-              <h2>3. Investitionsrisiken</h2>
-              <p>Alle Investitionen bergen Risiken. Frühere Ergebnisse garantieren keine zukünftigen Resultate. Bei Nutzung unserer Dienste erkennen Sie an, dass:</p>
+              <h2>3. Investment Risks</h2>
+              <p>All investments involve risk. Past performance does not guarantee future results. By using our services, you acknowledge that:</p>
               <ul>
-                <li>Der Wert von Investitionen steigen oder fallen kann</li>
-                <li>Sie möglicherweise weniger zurückerhalten als ursprünglich investiert</li>
-                <li>Wechselkursschwankungen den Wert Ihrer Investitionen beeinflussen können</li>
+                <li>The value of investments can rise or fall</li>
+                <li>You may receive less back than you originally invested</li>
+                <li>Currency fluctuations can affect the value of your investments</li>
               </ul>
-              <p>Wir empfehlen, vor Investitionsentscheidungen unabhängigen Finanzrat einzuholen.</p>
+              <p>We recommend obtaining independent financial advice before making investment decisions.</p>
             </div>
       
             <div class="legal-popup-section">
-              <h2>4. Berechtigung</h2>
-              <p>Um unsere Dienste nutzen zu können, müssen Sie:</p>
+              <h2>4. Eligibility</h2>
+              <p>To use our services, you must:</p>
               <ul>
-                <li>Mindestens 18 Jahre alt sein</li>
-                <li>Rechtlich in der Lage sein, verbindliche Verträge abzuschließen</li>
-                <li>Nicht gesetzlich daran gehindert sein, unsere Dienste zu nutzen</li>
-                <li>Während der Registrierung wahre und vollständige Angaben machen</li>
+                <li>Be at least 18 years old</li>
+                <li>Be legally capable of entering into binding contracts</li>
+                <li>Not be legally prohibited from using our services</li>
+                <li>Provide truthful and complete information during registration</li>
               </ul>
             </div>
       
             <div class="legal-popup-section">
-              <h2>5. Datenschutz</h2>
-              <p>Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Unsere <a href="#" class="popup-trigger" data-popup="privacidade-popup">Datenschutzerklärung</a> beschreibt, wie wir Ihre persönlichen Daten erheben, verwenden und schützen.</p>
+              <h2>5. Privacy</h2>
+              <p>Protecting your personal data is important to us. Our <a href="#" class="popup-trigger" data-popup="privacidade-popup">Privacy Policy</a> describes how we collect, use, and protect your personal data.</p>
             </div>
       
             <div class="legal-popup-section">
-              <h2>6. Geistiges Eigentum</h2>
-              <p>Alle Inhalte, Designs, Grafiken, Schnittstellen, Codes und Software auf unserer Website und in unseren Diensten sind Eigentum von Micronyx AI Ltd. und durch geistiges Eigentumsrecht geschützt.</p>
+              <h2>6. Intellectual Property</h2>
+              <p>All content, designs, graphics, interfaces, code, and software on our website and services are the property of Micronyx AI Ltd. and protected by intellectual property law.</p>
             </div>
       
             <div class="legal-popup-section">
-              <h2>7. Haftungsbeschränkung</h2>
-              <p>Weder Micronyx AI Ltd. noch deren Geschäftsführer, Mitarbeiter oder Verbundene haften für direkte, indirekte, zufällige, spezielle oder Folgeschäden, die sich aus der Nutzung oder der Unmöglichkeit der Nutzung unserer Dienste ergeben.</p>
+              <h2>7. Limitation of Liability</h2>
+              <p>Neither Micronyx AI Ltd. nor its directors, employees, or affiliates shall be liable for direct, indirect, incidental, special, or consequential damages arising from the use or inability to use our services.</p>
             </div>
       
             <div class="legal-popup-section">
-              <h2>8. Änderungen der Bedingungen</h2>
-              <p>Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen treten sofort nach Veröffentlichung der aktualisierten Bedingungen in Kraft. Die fortgesetzte Nutzung unserer Dienste nach solchen Änderungen gilt als Zustimmung zu den neuen Bedingungen.</p>
+              <h2>8. Changes to Terms</h2>
+              <p>We reserve the right to modify these terms at any time. Changes take effect immediately upon posting the updated terms. Continued use of our services constitutes acceptance of the new terms.</p>
             </div>
       
             <div class="legal-popup-section">
-              <h2>9. Anwendbares Recht</h2>
-              <p>Diese Bedingungen unterliegen dem Recht der Schweiz und sind entsprechend auszulegen, ohne Berücksichtigung ihrer Kollisionsnormen.</p>
+              <h2>9. Governing Law</h2>
+              <p>These terms are governed by and construed in accordance with the laws of Switzerland, without regard to conflict of law principles.</p>
             </div>
       
             <div class="legal-popup-section">
-              <h2>10. Kontakt</h2>
-              <p>Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns bitte:</p>
+              <h2>10. Contact</h2>
+              <p>If you have questions about these Terms of Use, please contact us:</p>
               <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
               <p>Email: <a href="/cdn-cgi/l/email-protection#8cefe3e2f8edf8e3cce1e5effee3e2f5f4ede5a2efe3e1"><span class="__cf_email__" data-cfemail="aac9c5c4decbdec5eac7c3c9d8c5c4d3d2cbc384c9c5c7">[email�protected]</span></a></p>
             </div>
           </div>
           <div class="legal-popup-footer">
-            © 2025 Micronyx AI Ltd. Alle Rechte vorbehalten.<br>
-            CMVM Lizenz Nr. 37925 | Handelsregister: 287190345
+            © 2025 Micronyx AI Ltd. All rights reserved.<br>
+            CMVM License No. 37925 | Commercial Registry: 287190345
           </div>
         </div>
       </div>
@@ -4225,124 +4225,124 @@ document.addEventListener('click', function() {
       <div id="privacidade-popup" class="legal-popup-overlay">
         <div class="legal-popup">
           <div class="legal-popup-header">
-            <h2 class="legal-popup-title">Datenschutzerklärung</h2>
+            <h2 class="legal-popup-title">Privacy Policy</h2>
             <button class="legal-popup-close" data-close="privacidade-popup">×</button>
           </div>
           <div class="legal-popup-content">
-            <p>Letzte Aktualisierung: 7. Mai 2025</p>
-            <p>Micronyx AI Ltd., Betreiber von Impulso Invest, verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzerklärung erklärt, wie wir Ihre personenbezogenen Daten erheben, verwenden, offenlegen und schützen, wenn Sie unsere Dienste nutzen.</p>
+            <p>Last updated: May 7, 2025</p>
+            <p>Micronyx AI Ltd., operator of Impulso Invest, is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal data when you use our services.</p>
       
             <div class="legal-popup-section">
-              <h2>1. Erhobene Daten</h2>
-              <p>Wir können folgende Arten von Daten erheben:</p>
+              <h2>1. Data We Collect</h2>
+              <p>We may collect the following types of data:</p>
       
-              <h3>1.1 Persönliche Daten</h3>
+              <h3>1.1 Personal Data</h3>
               <ul>
-                <li>Vollständiger Name</li>
-                <li>E-Mail-Adresse</li>
-                <li>Telefonnummer</li>
-                <li>Wohnadresse</li>
-                <li>Geburtsdatum</li>
-                <li>Ausweisdokumente (z. B. Reisepass oder Identitätskarte)</li>
-                <li>Finanzdaten (z. B. Bankinformationen)</li>
+                <li>Full name</li>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Home address</li>
+                <li>Date of birth</li>
+                <li>Identification documents (e.g., passport or ID card)</li>
+                <li>Financial data (e.g., bank information)</li>
               </ul>
       
-              <h3>1.2 Nutzungsdaten</h3>
+              <h3>1.2 Usage Data</h3>
               <ul>
-                <li>IP-Adresse</li>
-                <li>Browser- und Gerätetyp</li>
-                <li>Besuchte Seiten und Verweildauer</li>
-                <li>Klicks und Interaktionen auf der Website</li>
-                <li>Transaktionshistorie</li>
-              </ul>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>2. Verwendung Ihrer Daten</h2>
-              <p>Wir verwenden Ihre personenbezogenen Daten zu folgenden Zwecken:</p>
-              <ul>
-                <li>Bereitstellung und Wartung unserer Dienste</li>
-                <li>Verarbeitung von Transaktionen und Verwaltung Ihres Kontos</li>
-                <li>Erfüllung gesetzlicher und regulatorischer Verpflichtungen</li>
-                <li>Prävention von Betrug und illegalen Aktivitäten</li>
-                <li>Verbesserung unserer Dienste und Entwicklung neuer Funktionen</li>
-                <li>Kommunikation über Updates, Angebote und Veranstaltungen</li>
-                <li>Personalisierung Ihrer Nutzererfahrung</li>
+                <li>IP address</li>
+                <li>Browser and device type</li>
+                <li>Pages visited and time spent</li>
+                <li>Clicks and interactions on the website</li>
+                <li>Transaction history</li>
               </ul>
             </div>
       
             <div class="legal-popup-section">
-              <h2>3. Rechtsgrundlagen der Datenverarbeitung</h2>
-              <p>Wir verarbeiten Ihre personenbezogenen Daten basierend auf folgenden Rechtsgrundlagen:</p>
+              <h2>2. How We Use Your Data</h2>
+              <p>We use your personal data for the following purposes:</p>
               <ul>
-                <li><strong>Vertragserfüllung:</strong> Wenn die Verarbeitung zur Erfüllung eines Vertrags mit Ihnen notwendig ist</li>
-                <li><strong>Einwilligung:</strong> Wenn Sie uns Ihre ausdrückliche Zustimmung gegeben haben</li>
-                <li><strong>Gesetzliche Verpflichtung:</strong> Wenn die Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist</li>
-                <li><strong>Legitime Interessen:</strong> Wenn die Verarbeitung zur Wahrung unserer berechtigten Interessen erfolgt, ohne Ihre Rechte und Freiheiten zu beeinträchtigen</li>
+                <li>Provide and maintain our services</li>
+                <li>Process transactions and manage your account</li>
+                <li>Comply with legal and regulatory obligations</li>
+                <li>Prevent fraud and illegal activities</li>
+                <li>Improve our services and develop new features</li>
+                <li>Communicate updates, offers, and events</li>
+                <li>Personalize your user experience</li>
               </ul>
             </div>
       
             <div class="legal-popup-section">
-              <h2>4. Weitergabe von Daten</h2>
-              <p>Wir können Ihre personenbezogenen Daten weitergeben an:</p>
+              <h2>3. Legal Bases for Processing</h2>
+              <p>We process your personal data based on the following legal bases:</p>
               <ul>
-                <li><strong>Dienstleister:</strong> Unternehmen, die uns bei der Bereitstellung unserer Dienste unterstützen (z. B. Zahlungsabwickler, Hosting-Anbieter)</li>
-                <li><strong>Geschäftspartner:</strong> Unternehmen, mit denen wir zusammenarbeiten, um Dienstleistungen anzubieten</li>
-                <li><strong>Regulierungsbehörden:</strong> Wenn dies gesetzlich oder behördlich vorgeschrieben ist</li>
-                <li><strong>Mögliche Käufer:</strong> Im Fall einer Fusion, Übernahme oder Verkauf von Vermögenswerten</li>
+                <li><strong>Contract performance:</strong> When processing is necessary to perform a contract with you</li>
+                <li><strong>Consent:</strong> When you have given us your explicit consent</li>
+                <li><strong>Legal obligation:</strong> When processing is necessary to comply with a legal obligation</li>
+                <li><strong>Legitimate interests:</strong> When processing is necessary for our legitimate interests without overriding your rights and freedoms</li>
               </ul>
-              <p>Wir verkaufen Ihre personenbezogenen Daten nicht an Dritte.</p>
             </div>
       
             <div class="legal-popup-section">
-              <h2>5. Cookies und ähnliche Technologien</h2>
-              <p>Wir verwenden Cookies und ähnliche Technologien, um Ihre Erfahrung zu verbessern, den Verkehr zu analysieren und Inhalte zu personalisieren. Sie können die Verwendung von Cookies über die Einstellungen Ihres Browsers steuern. Für weitere Informationen lesen Sie bitte unsere <a href="#" class="popup-trigger" data-popup="cookies-popup">Cookie-Richtlinie</a>.</p>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>6. Datensicherheit</h2>
-              <p>Wir haben technische und organisatorische Maßnahmen implementiert, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Veränderung zu schützen. Dazu gehören Verschlüsselung, Firewalls und Zugriffskontrollen.</p>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>7. Datenaufbewahrung</h2>
-              <p>Wir speichern Ihre personenbezogenen Daten nur so lange, wie es für die Zwecke dieser Richtlinie erforderlich ist, es sei denn, gesetzliche Vorschriften schreiben eine längere Aufbewahrung vor oder erlauben diese.</p>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>8. Ihre Rechte</h2>
-              <p>Je nach Ihrem Standort können Sie folgende Rechte in Bezug auf Ihre personenbezogenen Daten haben:</p>
+              <h2>4. Sharing Your Data</h2>
+              <p>We may share your personal data with:</p>
               <ul>
-                <li>Zugriff auf Ihre personenbezogenen Daten</li>
-                <li>Korrektur unrichtiger Daten</li>
-                <li>Löschung Ihrer personenbezogenen Daten</li>
-                <li>Einschränkung oder Widerspruch gegen die Verarbeitung</li>
-                <li>Datenübertragbarkeit</li>
-                <li>Widerruf Ihrer Einwilligung</li>
+                <li><strong>Service providers:</strong> Companies that help us deliver our services (e.g., payment processors, hosting providers)</li>
+                <li><strong>Business partners:</strong> Companies we collaborate with to offer services</li>
+                <li><strong>Regulatory authorities:</strong> When required by law or regulation</li>
+                <li><strong>Potential buyers:</strong> In the event of a merger, acquisition, or sale of assets</li>
               </ul>
-              <p>Zur Ausübung dieser Rechte kontaktieren Sie uns bitte über die unten angegebenen Kontaktinformationen.</p>
+              <p>We do not sell your personal data to third parties.</p>
             </div>
       
             <div class="legal-popup-section">
-              <h2>9. Internationale Datenübermittlung</h2>
-              <p>Ihre personenbezogenen Daten können in Länder außerhalb Ihres Wohnsitzlandes übertragen und dort verarbeitet werden. Wir haben geeignete Schutzmaßnahmen implementiert, um die Sicherheit Ihrer Daten im Einklang mit dieser Richtlinie zu gewährleisten.</p>
+              <h2>5. Cookies and Similar Technologies</h2>
+              <p>We use cookies and similar technologies to enhance your experience, analyze traffic, and personalize content. You can control the use of cookies through your browser settings. For more information, please read our <a href="#" class="popup-trigger" data-popup="cookies-popup">Cookie Policy</a>.</p>
             </div>
       
             <div class="legal-popup-section">
-              <h2>10. Änderungen dieser Richtlinie</h2>
-              <p>Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Die jeweils aktuelle Version ist immer auf unserer Website verfügbar und enthält das Datum der letzten Aktualisierung. Wir empfehlen Ihnen, diese Richtlinie regelmäßig zu überprüfen.</p>
+              <h2>6. Data Security</h2>
+              <p>We have implemented technical and organizational measures to protect your personal data from unauthorized access, loss, or alteration. These include encryption, firewalls, and access controls.</p>
             </div>
       
             <div class="legal-popup-section">
-              <h2>11. Kontakt</h2>
-              <p>Wenn Sie Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte:</p>
+              <h2>7. Data Retention</h2>
+              <p>We retain your personal data only as long as necessary for the purposes described in this policy, unless a longer retention period is required or permitted by law.</p>
+            </div>
+      
+            <div class="legal-popup-section">
+              <h2>8. Your Rights</h2>
+              <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+              <ul>
+                <li>Access your personal data</li>
+                <li>Correct inaccurate data</li>
+                <li>Delete your personal data</li>
+                <li>Restrict or object to processing</li>
+                <li>Data portability</li>
+                <li>Withdraw your consent</li>
+              </ul>
+              <p>To exercise these rights, please contact us using the contact information below.</p>
+            </div>
+      
+            <div class="legal-popup-section">
+              <h2>9. International Data Transfers</h2>
+              <p>Your personal data may be transferred to and processed in countries outside your country of residence. We implement appropriate safeguards to ensure the security of your data in accordance with this policy.</p>
+            </div>
+      
+            <div class="legal-popup-section">
+              <h2>10. Changes to This Policy</h2>
+              <p>We may update this Privacy Policy from time to time. The current version is always available on our website and includes the date of the last update. We encourage you to review this policy regularly.</p>
+            </div>
+      
+            <div class="legal-popup-section">
+              <h2>11. Contact</h2>
+              <p>If you have questions about this Privacy Policy or our processing of your personal data, please contact us:</p>
               <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
               <p>Email: <a href="/cdn-cgi/l/email-protection#bdded2d3c9dcc9d2fdd0d4decfd2d3c4c5dcd493ded2d0"><span class="__cf_email__" data-cfemail="b7d4d8d9c3d6c3d8f7daded4c5d8d9cecfd6de99d4d8da">[email�protected]</span></a></p>
             </div>
           </div>
           <div class="legal-popup-footer">
-            © 2025 Micronyx AI Ltd. Alle Rechte vorbehalten.<br>
-            CMVM Lizenz Nr. 37925 | Handelsregister: 287190345
+            © 2025 Micronyx AI Ltd. All rights reserved.<br>
+            CMVM License No. 37925 | Commercial Registry: 287190345
           </div>
         </div>
       </div>
@@ -4351,93 +4351,93 @@ document.addEventListener('click', function() {
 <div id="cookies-popup" class="legal-popup-overlay">
     <div class="legal-popup">
       <div class="legal-popup-header">
-        <h2 class="legal-popup-title">Cookie-Richtlinie</h2>
+  <h2 class="legal-popup-title">Cookie Policy</h2>
         <button class="legal-popup-close" data-close="cookies-popup">×</button>
       </div>
       <div class="legal-popup-content">
-        <p>Letzte Aktualisierung: 7. Mai 2025</p>
-        <p>Diese Cookie-Richtlinie erklärt, wie Micronyx AI Ltd., Betreiber von Impulso Invest, Cookies und ähnliche Technologien auf unserer Webseite verwendet. Wir empfehlen, diese Richtlinie zu lesen, um zu verstehen, welche Arten von Cookies wir verwenden, welche Informationen wir sammeln und wie wir diese verwenden.</p>
+  <p>Last updated: May 7, 2025</p>
+  <p>This Cookie Policy explains how Micronyx AI Ltd., operator of Impulso Invest, uses cookies and similar technologies on our website. We recommend reading this policy to understand what types of cookies we use, what information we collect, and how we use it.</p>
   
         <div class="legal-popup-section">
-          <h2>1. Was sind Cookies?</h2>
-          <p>Cookies sind kleine Textdateien, die auf Ihrem Gerät (Computer, Tablet oder Mobilgerät) gespeichert werden, wenn Sie eine Webseite besuchen. Sie werden häufig verwendet, um Webseiten effizienter zu machen und den Webseitenbetreibern Informationen bereitzustellen.</p>
-          <p>Cookies ermöglichen es einer Webseite, Ihr Gerät zu erkennen und bestimmte Informationen über Ihren Besuch zu speichern, wie z. B. Ihre Spracheinstellungen oder Anmeldedaten. Dies kann Ihren nächsten Besuch erleichtern und die Webseite für Sie nützlicher machen.</p>
+          <h2>1. What are Cookies?</h2>
+          <p>Cookies are small text files stored on your device (computer, tablet, or mobile) when you visit a website. They are commonly used to make websites work more efficiently and to provide information to website owners.</p>
+          <p>Cookies allow a website to recognize your device and store certain information about your visit, such as language preferences or login details. This can make your next visit easier and the website more useful to you.</p>
         </div>
   
         <div class="legal-popup-section">
-          <h2>2. Arten von Cookies, die wir verwenden</h2>
-          <p>Wir verwenden auf unserer Webseite folgende Arten von Cookies:</p>
+          <h2>2. Types of Cookies We Use</h2>
+          <p>We use the following types of cookies on our website:</p>
   
-          <h3>2.1 Essenzielle Cookies</h3>
-          <p>Diese Cookies sind für die grundlegende Funktionalität der Webseite erforderlich. Sie ermöglichen die Navigation auf der Seite und den Zugriff auf sichere Bereiche. Ohne diese Cookies können viele der von Ihnen angeforderten Dienste nicht bereitgestellt werden.</p>
+          <h3>2.1 Essential Cookies</h3>
+          <p>These cookies are necessary for the basic functionality of the website. They enable navigation and access to secure areas. Without these cookies, many of the services you request cannot be provided.</p>
   
-          <h3>2.2 Präferenz-Cookies</h3>
-          <p>Diese Cookies merken sich Ihre vorherigen Einstellungen, wie Ihre bevorzugte Sprache, Region, Textgröße oder andere personalisierte Optionen. Sie helfen dabei, Ihnen eine individuellere Erfahrung zu bieten.</p>
+          <h3>2.2 Preference Cookies</h3>
+          <p>These cookies remember your previous settings, such as preferred language, region, text size, or other personalized options. They help provide a more tailored experience.</p>
   
-          <h3>2.3 Analyse-Cookies</h3>
-          <p>Wir verwenden Analyse-Cookies, um zu verstehen, wie Besucher mit unserer Webseite interagieren. Sie helfen uns, die Funktionalität der Seite zu verbessern, deren Leistung zu messen und die Wirksamkeit unserer Marketingkampagnen zu bewerten. Alle von diesen Cookies gesammelten Informationen sind aggregiert und anonymisiert.</p>
+          <h3>2.3 Analytics Cookies</h3>
+          <p>We use analytics cookies to understand how visitors interact with our website. They help us improve site functionality, measure performance, and evaluate the effectiveness of our marketing campaigns. All information collected by these cookies is aggregated and anonymized.</p>
   
-          <h3>2.4 Marketing-Cookies</h3>
-          <p>Diese Cookies werden verwendet, um Besucher über verschiedene Webseiten hinweg zu verfolgen. Ziel ist es, relevante und ansprechende Anzeigen für den einzelnen Nutzer zu zeigen, die für Herausgeber und Werbetreibende von Drittanbietern wertvoller sind.</p>
+          <h3>2.4 Marketing Cookies</h3>
+          <p>These cookies are used to track visitors across websites. The goal is to display relevant and engaging ads for individual users, which are more valuable for publishers and third-party advertisers.</p>
         </div>
   
         <div class="legal-popup-section">
-          <h2>3. Spezifische Cookies, die wir verwenden</h2>
-          <p>Die folgende Tabelle enthält einige der wichtigsten Cookies, die wir verwenden, sowie deren Zweck:</p>
+          <h2>3. Specific Cookies We Use</h2>
+          <p>The table below lists some of the main cookies we use and their purpose:</p>
   
           <table class="legal-popup-table">
             <thead>
               <tr>
-                <th>Name des Cookies</th>
-                <th>Typ</th>
-                <th>Zweck</th>
-                <th>Dauer</th>
+                <th>Cookie Name</th>
+                <th>Type</th>
+                <th>Purpose</th>
+                <th>Duration</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>session_id</td>
-                <td>Essentiell</td>
-                <td>Hält den Sitzungsstatus des Nutzers aufrecht</td>
-                <td>Sitzung</td>
+                <td>Essential</td>
+                <td>Maintains user session state</td>
+                <td>Session</td>
               </tr>
               <tr>
                 <td>auth_token</td>
-                <td>Essentiell</td>
-                <td>Benutzerauthentifizierung</td>
-                <td>30 Tage</td>
+                <td>Essential</td>
+                <td>User authentication</td>
+                <td>30 days</td>
               </tr>
               <tr>
                 <td>language_pref</td>
-                <td>Präferenz</td>
-                <td>Speichert die bevorzugte Sprache des Nutzers</td>
-                <td>1 Jahr</td>
+                <td>Preference</td>
+                <td>Stores user's preferred language</td>
+                <td>1 year</td>
               </tr>
               <tr>
                 <td>_ga</td>
-                <td>Analyse</td>
-                <td>Von Google Analytics verwendet, um Nutzer zu unterscheiden</td>
-                <td>2 Jahre</td>
+                <td>Analytics</td>
+                <td>Used by Google Analytics to distinguish users</td>
+                <td>2 years</td>
               </tr>
               <tr>
                 <td>_gid</td>
-                <td>Analyse</td>
-                <td>Von Google Analytics verwendet, um Nutzer zu unterscheiden</td>
-                <td>24 Stunden</td>
+                <td>Analytics</td>
+                <td>Used by Google Analytics to distinguish users</td>
+                <td>24 hours</td>
               </tr>
               <tr>
                 <td>_fbp</td>
                 <td>Marketing</td>
-                <td>Von Facebook verwendet, um Anzeigen auszuliefern</td>
-                <td>3 Monate</td>
+                <td>Used by Facebook to deliver ads</td>
+                <td>3 months</td>
               </tr>
             </tbody>
           </table>
         </div>
   
         <div class="legal-popup-section">
-          <h2>4. Drittanbieter-Cookies</h2>
-          <p>Neben unseren eigenen Cookies (First-Party-Cookies) verwenden wir auch Cookies von Drittanbietern auf unserer Webseite. Diese werden von einer anderen Domain als der besuchten Webseite gesetzt. Wir verwenden Drittanbieter-Cookies für folgende Zwecke:</p>
+          <h2>4. Third-Party Cookies</h2>
+          <p>In addition to our own cookies (first-party cookies), we also use third-party cookies on our website. These are set by a domain other than the website you are visiting. We use third-party cookies for the following purposes:</p>
           <ul>
             <li>Traffic-Analyse (Google Analytics)</li>
             <li>Marketing und Werbung (Facebook, Google Ads)</li>
@@ -4447,19 +4447,19 @@ document.addEventListener('click', function() {
         </div>
   
         <div class="legal-popup-section">
-          <h2>5. Wie Sie Cookies verwalten können</h2>
-          <p>Die meisten Browser ermöglichen Ihnen die Kontrolle über Cookies über die Einstellungen oder Präferenzen. Sie können Ihren Browser so einstellen, dass alle Cookies abgelehnt werden oder dass Sie benachrichtigt werden, wenn ein Cookie gesendet wird. Wenn Sie Cookies ablehnen, funktionieren einige Funktionen unserer Webseite möglicherweise nicht richtig.</p>
+          <h2>5. How to Manage Cookies</h2>
+          <p>Most browsers allow you to control cookies through settings or preferences. You can set your browser to refuse all cookies or to notify you when a cookie is being sent. If you refuse cookies, some features of our website may not function properly.</p>
   
-          <h3>5.1 Browsereinstellungen</h3>
+          <h3>5.1 Browser Settings</h3>
           <ul>
-            <li><strong>Google Chrome:</strong> Menü > Einstellungen > Erweitert > Datenschutz und Sicherheit > Inhaltseinstellungen > Cookies</li>
-            <li><strong>Mozilla Firefox:</strong> Menü > Optionen > Datenschutz & Sicherheit > Cookies und Website-Daten</li>
-            <li><strong>Safari:</strong> Einstellungen > Datenschutz > Cookies und Website-Daten</li>
-            <li><strong>Microsoft Edge:</strong> Menü > Einstellungen > Cookies und Websiteberechtigungen > Cookies</li>
+            <li><strong>Google Chrome:</strong> Menu > Settings > Advanced > Privacy and security > Site settings > Cookies</li>
+            <li><strong>Mozilla Firefox:</strong> Menu > Options > Privacy & Security > Cookies and Site Data</li>
+            <li><strong>Safari:</strong> Preferences > Privacy > Cookies and Website Data</li>
+            <li><strong>Microsoft Edge:</strong> Menu > Settings > Cookies and site permissions > Cookies</li>
           </ul>
   
-          <h3>5.2 Opt-out-Tools</h3>
-          <p>Sie können sich auch von bestimmten Drittanbieter-Cookies abmelden:</p>
+          <h3>5.2 Opt-out Tools</h3>
+          <p>You can also opt-out of certain third-party cookies:</p>
           <ul>
             <li>Google Analytics: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout</a></li>
             <li>Facebook: <a href="https://www.facebook.com/settings/?tab=ads" target="_blank" rel="noopener noreferrer">https://www.facebook.com/settings/?tab=ads</a></li>
@@ -4467,21 +4467,21 @@ document.addEventListener('click', function() {
         </div>
   
         <div class="legal-popup-section">
-          <h2>6. Änderungen an dieser Richtlinie</h2>
-          <p>Wir können diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren, um Änderungen in der Verwendung von Cookies oder aus betrieblichen, rechtlichen oder regulatorischen Gründen widerzuspiegeln. Wir empfehlen Ihnen, diese Seite regelmäßig zu besuchen, um über die Verwendung von Cookies und verwandten Technologien informiert zu bleiben.</p>
-          <p>Das Datum oben in dieser Richtlinie gibt an, wann sie zuletzt aktualisiert wurde.</p>
+          <h2>6. Changes to This Policy</h2>
+          <p>We may update this Cookie Policy from time to time to reflect changes in our use of cookies or for operational, legal, or regulatory reasons. We encourage you to visit this page regularly to stay informed about our use of cookies and related technologies.</p>
+          <p>The date at the top of this policy indicates when it was last updated.</p>
         </div>
   
         <div class="legal-popup-section">
-          <h2>7. Kontakt</h2>
-          <p>Wenn Sie Fragen zu dieser Cookie-Richtlinie haben, kontaktieren Sie uns bitte:</p>
+          <h2>7. Contact</h2>
+          <p>If you have questions about this Cookie Policy, please contact us:</p>
           <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
           <p>E-Mail: <a href="/cdn-cgi/l/email-protection#4d2e2223392c39220d20242e3f222334352c24632e2220"><span class="__cf_email__" data-cfemail="9bf8f4f5effaeff4dbf6f2f8e9f4f5e2e3faf2b5f8f4f6">[email�protected]</span></a></p>
         </div>
       </div>
       <div class="legal-popup-footer">
-        © 2025 Micronyx AI Ltd. Alle Rechte vorbehalten.<br>
-        CMVM Lizenz Nr. 37925 | Handelsregister: 287190345
+        © 2025 Micronyx AI Ltd. All rights reserved.<br>
+        CMVM License No. 37925 | Commercial Registry: 287190345
       </div>
     </div>
   </div>
