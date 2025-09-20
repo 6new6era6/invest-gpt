@@ -8,6 +8,10 @@
 	<link rel="stylesheet" href="css/flow.css">
 	<link rel="stylesheet" href="css/funnel.css">
 	<link rel="stylesheet" href="css/chat.css">
+		<!-- Vendor demo styles for unified look -->
+		<link rel="stylesheet" href="demo/vendor/css/vendor_bundle.css">
+		<link rel="stylesheet" href="demo/vendor/css/adict.css">
+		<link rel="stylesheet" href="demo/vendor/css/introjs.min.css">
 	<style>
 		.ob-container{max-width:960px;margin:0 auto;padding:24px}
 		.ob-card{background:#0f172a;color:#e2e8f0;border-radius:16px;padding:24px;box-shadow:0 10px 25px rgba(2,6,23,.4)}

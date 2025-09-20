@@ -74,8 +74,12 @@
 		btn.className = 'cta';
 		btn.textContent = 'Перейти до демо';
 		btn.onclick = () => {
-			const q = asset ? `?asset=${encodeURIComponent(asset)}` : '';
-			window.location.href = `../demo/index.html${q}`;
+			const qp = new URLSearchParams(location.search);
+			const lang = qp.get('lang') || localStorage.getItem('lang') || 'uk';
+			const params = new URLSearchParams();
+			if (asset) params.set('asset', asset);
+			if (lang) params.set('lang', lang);
+			window.location.href = `../demo/index.html?${params.toString()}`;
 		};
 		wrap.appendChild(btn);
 		const { chat } = getEl();

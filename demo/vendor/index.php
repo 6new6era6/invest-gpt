@@ -73,105 +73,7 @@
     padding: 12px 15px !important;
     font-size: 16px !important;
     margin: 5px !important;
-    display: inline-block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  
-  /* Убираем все трансформации и переходы */
-  .introjs-tooltip, 
-  .introjs-helperLayer, 
-  .introjs-tooltipReferenceLayer {
-    transform: none !important;
-    transition: none !important;
-    animation: none !important;
-  }
-  
-  /* Принудительно показываем контент */
-  .introjs-tooltiptext {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  
-  /* Принудительно показываем кнопки */
-  .introjs-tooltipbuttons {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    justify-content: space-between !important;
-  }
-  
-
-  
-  /* Исключаем элементы туториала из правила выше */
-  .introjs-overlay, 
-  .introjs-helperLayer, 
-  .introjs-tooltipReferenceLayer, 
-  .introjs-tooltip, 
-  .introjs-tooltip * {
-    z-index: 9999999 !important;
-  }
-}
-</style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Micronyx AI | Trading Bot Demo Tutorial</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Chart.js for graphs -->
-    <script src="js/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
-    
-   
-    <link rel="stylesheet" href="css/introjs.min.css">
-    <script src="js/intro.min.js"></script>
-    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="shortcut icon" href="images/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-
-    <style>
-        :root {
-            --primary: #3b82f6;
-            --primary-dark: #2563eb;
-            --primary-light: #60a5fa;
-            --secondary: #10b981;
-            --secondary-dark: #059669;
-            --accent: #8b5cf6;
-            --accent-dark: #7c3aed;
-            --neutral: #6b7280;
-            --neutral-dark: #4b5563;
-            --warning: #f59e0b;
-            --warning-dark: #d97706;
-            --dark: #0f172a;
-            --darker: #020617;
-            --light: #f3f4f6;
-            --lighter: #f9fafb;
-            --chart-bg: #111827;
-            --card-bg: #1e293b;
-            --card-border: #334155;
-        }
-        
-        body {
-            background-color: var(--darker);
-            color: var(--light);
-            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        .card {
-            background-color: var(--card-bg);
-            border-radius: 0.5rem;
-            border: 1px solid var(--card-border);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-        
-        .btn-primary {
-            background-color: var(--primary);
-            color: white;
-            transition: all 0.2s ease;
+      <!-- Removed duplicate German Risk Disclosure popup -->
         }
         
         .btn-primary:hover {
@@ -215,51 +117,6 @@
             height: 8px;
             border-radius: 5px;
             background: #334155;
-            outline: none;
-        }
-        
-        input[type="range"]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: var(--primary);
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        
-        input[type="range"]::-webkit-slider-thumb:hover {
-            background: var(--primary-dark);
-            transform: scale(1.1);
-        }
-        
-        /* Transaction animation */
-        .trade-card {
-            background-color: rgba(30, 41, 59, 0.8);
-            border-left: 4px solid var(--neutral);
-            border-radius: 0.25rem;
-            padding: 0.75rem;
-            margin-bottom: 0.5rem;
-            opacity: 0;
-            transform: translateY(-10px);
-            transition: all 0.3s ease;
-            backdrop-filter: blur(4px);
-        }
-        
-        .trade-card.buy {
-            border-left-color: var(--neutral);
-        }
-        
-        .trade-card.sell {
-            border-left-color: var(--secondary);
-        }
-        
-        .trade-card.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
         /* Profit/loss indicators */
         .profit {
             color: var(--secondary);
@@ -1425,25 +1282,25 @@ background-color: #212936;
 
         <!-- Контент -->
 <i data-lucide="bot" class="w-20 h-20 mx-auto mb-4 text-blue-500"></i>
-<h2 class="relative z-10 text-xl sm:text-2xl font-bold mb-4">Welcome to the <br> <span class="text-gradient">Trading Bot</span> Demo</h2>
-<p class="relative z-10 text-gray-300 mb-6 text-sm sm:text-base">
+<h2 class="relative z-10 text-xl sm:text-2xl font-bold mb-4" data-i18n="welcome_title">Welcome to the <br> <span class="text-gradient">Trading Bot</span> Demo</h2>
+<p class="relative z-10 text-gray-300 mb-6 text-sm sm:text-base" data-i18n="welcome_desc">
   This is a demonstration that shows how an automated trading bot works. No real money is used and no real trades are executed.
 </p>
 
 <div class="relative z-10 bg-slate-800 p-4 rounded-md mb-6 text-left text-sm sm:text-base">
-  <h3 class="font-bold mb-2">What you'll learn:</h3>
+  <h3 class="font-bold mb-2" data-i18n="welcome_learn">What you'll learn:</h3>
     <ul class="list-disc pl-5 space-y-1 text-gray-300">
-    <li>How to set up a trading bot</li>
-    <li>How to choose markets and strategies</li>
-    <li>How to monitor the bot's performance</li>
-    <li>How the bot executes trades automatically</li>
+    <li data-i18n="welcome_learn_1">How to set up a trading bot</li>
+    <li data-i18n="welcome_learn_2">How to choose markets and strategies</li>
+    <li data-i18n="welcome_learn_3">How to monitor the bot's performance</li>
+    <li data-i18n="welcome_learn_4">How the bot executes trades automatically</li>
     </ul>
 </div>
-<p class="relative z-10 text-gray-400 mb-6 text-sm sm:text-base">
+<p class="relative z-10 text-gray-400 mb-6 text-sm sm:text-base" data-i18n="welcome_lets">
   Let's start with a quick tutorial that shows how everything works.
 </p>
 
-<button id="startDemoBtn" class="relative z-10 py-3 px-6 sm:px-8 rounded-md btn-primary font-medium w-full sm:w-auto">
+<button id="startDemoBtn" class="relative z-10 py-3 px-6 sm:px-8 rounded-md btn-primary font-medium w-full sm:w-auto" data-i18n="start_demo">
   Start Demo
 </button>
     </div>
@@ -1516,7 +1373,7 @@ background-color: #212936;
 
     <!-- Button -->
     <div class="flex justify-center md:justify-start">
-        <a href="#registro" style="padding: 20px;" id="full_access" class="flex items-center justify-center gap-2 neon-button px-6 py-2 text-sm rounded-full font-semibold">
+        <a href="#registro" style="padding: 20px;" id="full_access" class="flex items-center justify-center gap-2 neon-button px-6 py-2 text-sm rounded-full font-semibold" data-i18n="get_full_access">
           <!-- Raketen-Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="rocket" class="lucide lucide-rocket w-4 h-4">
             <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
@@ -1531,11 +1388,11 @@ background-color: #212936;
     <!-- Información de la cuenta -->
     <div class="flex flex-col items-center md:flex-row md:items-center md:space-x-4 gap-2">
         <div class="text-center md:text-right">
-          <p class="text-sm text-gray-400">Current DEMO Balance</p>
+          <p class="text-sm text-gray-400" data-i18n="current_demo_balance">Current DEMO Balance</p>
           <p class="text-xl font-bold text-white">₣ <span id="balance">0.00</span></p>
         </div>
         <div>
-          <p style="color: red;">DEMO</p>
+          <p style="color: red;" data-i18n="demo_label">DEMO</p>
         </div>
         <div class="h-10 w-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">
           D
@@ -1549,21 +1406,21 @@ background-color: #212936;
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
             <!-- Left Column - Settings -->
             <div class="card p-6" data-intro="Here you can configure your trading bot settings, including deposit, markets, and strategy." data-step="2">
-                <h2 class="text-xl font-bold mb-4">Trading Settings</h2>
+                <h2 class="text-xl font-bold mb-4" data-i18n="trading_settings">Trading Settings</h2>
 
                 <!-- Einzahlung-/Auszahlungs-Buttons -->
                 <div class="flex space-x-2 mb-6" data-intro="You need to deposit funds to start trading. Click the Deposit button to add funds to your account." data-step="3">
-                    <button id="depositBtn" class="flex-1 py-2 rounded-md btn-primary font-medium pulse">
-                        Deposit
-                    </button>
-                    <button id="withdrawBtn" class="flex-1 py-2 rounded-md btn-neutral font-medium">
-                        Withdraw
-                    </button>
+          <button id="depositBtn" class="flex-1 py-2 rounded-md btn-primary font-medium pulse" data-i18n="deposit">
+            Deposit
+          </button>
+          <button id="withdrawBtn" class="flex-1 py-2 rounded-md btn-neutral font-medium" data-i18n="withdraw">
+            Withdraw
+          </button>
                 </div>
 
                 <!-- Market Selection -->
                 <div class="mb-6" data-intro="Select the markets you want to trade. You can choose multiple." data-step="4">
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Select Markets</label>
+                    <label class="block text-sm font-medium text-gray-400 mb-2" data-i18n="select_markets">Select Markets</label>
                     <div class="grid grid-cols-2 gap-3">
                       <div class="market-option selected p-3 rounded-md bg-slate-800" data-market="forex">
                         <div class="flex items-center">
@@ -1572,9 +1429,9 @@ background-color: #212936;
                               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.736 6.979C9.208 6.193 9.696 6 10 6c.304 0 .792.193 1.264.979a1 1 0 001.715-1.029C12.279 4.784 11.232 4 10 4s-2.279.784-2.979 1.95a1 1 0 001.715 1.029zM6 10a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zM7.264 14.021C6.792 14.807 6.304 15 6 15c-.304 0-.792-.193-1.264-.979a1 1 0 00-1.715 1.029C3.721 16.216 4.768 17 6 17s2.279-.784 2.979-1.95a1 1 0 00-1.715-1.029z" clip-rule="evenodd"></path>
                             </svg>
                           </div>
-                          <span>Forex</span>
+                          <span data-i18n="market_forex">Forex</span>
                         </div>
-                        <p class="text-xs text-gray-400 mt-1">Pairs</p>
+                        <p class="text-xs text-gray-400 mt-1" data-i18n="market_pairs">Pairs</p>
                       </div>
                       <div class="market-option p-3 rounded-md bg-slate-800" data-market="stocks">
                         <div class="flex items-center">
@@ -1583,9 +1440,9 @@ background-color: #212936;
                               <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"></path>
                             </svg>
                           </div>
-                          <span>Stocks</span>
+                          <span data-i18n="market_stocks">Stocks</span>
                         </div>
-                        <p class="text-xs text-gray-400 mt-1">Equities</p>
+                        <p class="text-xs text-gray-400 mt-1" data-i18n="market_equities">Equities</p>
                       </div>
                       <div class="market-option p-3 rounded-md bg-slate-800" data-market="crypto">
                         <div class="flex items-center">
@@ -1594,9 +1451,9 @@ background-color: #212936;
                               <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path>
                             </svg>
                           </div>
-                          <span>Crypto</span>
+                          <span data-i18n="market_crypto">Crypto</span>
                         </div>
-                        <p class="text-xs text-gray-400 mt-1">Digital currencies</p>
+                        <p class="text-xs text-gray-400 mt-1" data-i18n="market_digital">Digital currencies</p>
                       </div>
                       <div class="market-option p-3 rounded-md bg-slate-800" data-market="commodities">
                         <div class="flex items-center">
@@ -1662,103 +1519,8 @@ background-color: #212936;
                     </div>
                   
                     <div id="chartOverlay" class="absolute inset-0 flex items-center justify-center bg-slate-900 bg-opacity-80 z-10 hidden">
-                      <div class="text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                        </svg>
-                        <p class="text-lg font-medium">Start the trading bot to view the live chart</p>
-                        <p class="text-sm text-gray-400 mt-2">Set your preferences and click "Start Trading Bot"</p>
-                      </div>
+                      <!-- Reserved for contextual overlays (not used for Risk Disclosure anymore) -->
                     </div>
-                  
-                    <!-- Live Trades Container -->
-                    <div id="liveTradesContainer" class="live-trades-container hidden" data-intro="Here you can see live trade notifications as they happen." data-step="8">
-                      <!-- Live trades will be added here -->
-                    </div>
-                  
-                    <!-- Balance Chart -->
-                    <div id="balanceDisplay" class="balance-chart hidden">
-                      <div class="flex items-center justify-between mb-2">
-                        <span class="text-sm font-medium">Total Balance</span>
-                        <span class="text-lg font-bold">₣ <span id="currentBalance">0.00</span></span>
-                      </div>
-                      <div class="flex items-center">
-                        <span class="text-xs text-gray-400">Profit:</span>
-                        <span id="profitIndicator" class="text-sm ml-2 profit">+₣ 0.00</span>
-                      </div>
-                    </div>
-                  </div>
-                
-                <!-- Trading Statistics -->
-                <div class="grid grid-cols-4 gap-4 mt-6" data-intro="These statistics show your trading performance, including total trades, win rate, and profits." data-step="9">
-                    <div class="bg-slate-800 p-3 rounded-md">
-                      <p class="text-sm text-gray-400">Total Trades</p>
-                      <p class="text-xl font-bold"><span id="totalTrades">0</span></p>
-                    </div>
-                    <div class="bg-slate-800 p-3 rounded-md">
-                      <p class="text-sm text-gray-400">Win Rate</p>
-                      <p class="text-xl font-bold"><span id="winRate">0</span>%</p>
-                    </div>
-                    <div class="bg-slate-800 p-3 rounded-md">
-                      <p class="text-sm text-gray-400">Profit Today</p>
-                      <p class="text-xl font-bold">₣<span id="profitToday">0.00</span></p>
-                    </div>
-                    <div class="bg-slate-800 p-3 rounded-md">
-                      <p class="text-sm text-gray-400">Total Profit</p>
-                      <p class="text-xl font-bold">₣<span id="totalProfit">0.00</span></p>
-                    </div>
-                  </div>
-            </div>
-            
-            <!-- Trade History -->
-      <div class="card p-6 lg:col-span-4" data-intro="This table shows your most recent trades with details for each transaction." data-step="10">
-        <h2 class="text-xl font-bold mb-4">Latest Trades</h2>
-                
-                <div class="overflow-x-auto">
-                  <table class="min-w-full">
-                    <thead>
-                      <tr class="border-b border-slate-700">
-                        <th class="py-3 text-left text-sm font-medium text-gray-400">Time</th>
-                        <th class="py-3 text-left text-sm font-medium text-gray-400">Asset</th>
-                        <th class="py-3 text-left text-sm font-medium text-gray-400">Type</th>
-                        <th class="py-3 text-left text-sm font-medium text-gray-400">Entry</th>
-                        <th class="py-3 text-left text-sm font-medium text-gray-400">Exit</th>
-                        <th class="py-3 text-left text-sm font-medium text-gray-400">Amount</th>
-                        <th class="py-3 text-right text-sm font-medium text-gray-400">Profit/Loss</th>
-                      </tr>
-                    </thead>
-                    <tbody id="tradeHistory">
-                      <!-- Dini Trade-Historie wird da angezeigt -->
-                      <tr class="border-b border-slate-800">
-                        <td class="py-4 text-sm" colspan="7">No trades yet. Start the trading bot to see activity.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-        </div>
-
-        
-        <!-- Footer -->
-        <footer class="mt-8 text-center text-sm text-gray-500">
-            <p>Micronyx AI Ltd.© 2025 <br><span style="color: red;">Trading Bot Demo.</span> <br>This is a simulation for demonstration purposes only.</p>
-            <p class="mt-1">No real money is used and no real trades are executed.</p>
-            <div class="legal-links flex flex-wrap space-x-4 justify-center mt-4">
-              <a href="#" class="legal-popup-link text-sm" data-popup="termos-uso-popup">Terms of Use</a>
-              <a href="#" class="legal-popup-link text-sm" data-popup="privacidade-popup">Privacy Policy</a>
-              <a href="#" class="legal-popup-link text-sm" data-popup="cookies-popup">Cookie Policy</a>
-              <a href="#" class="legal-popup-link text-sm" data-popup="risco-popup">Risk Disclosure</a>
-            </div>
-          </footer>
-    </div>
-    
-    <!-- Deposit Modal -->
-    <div id="depositModal" class="modal">
-        <div class="modal-content">
-            <div class="flex justify-between items-center mb-4">
-              <h2 class="text-xl font-bold">Deposit Funds <span style="color: red;">[Demo]</span></h2>
-              <button class="close-modal text-gray-400 hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               </button>
@@ -3456,7 +3218,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="legal-popup-section">
         <h2>10. Contact</h2>
         <p>If you have questions about these Terms of Use, please contact us:</p>
-        <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
+  <p>Av. da Liberdade 110<br>1269-046 Lisbon,<br>Portugal</p>
         <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
       </div>
     </div>
@@ -3582,7 +3344,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="legal-popup-section">
   <h2>11. Contact</h2>
   <p>If you have questions about this Privacy Policy or our processing of your personal data, please contact us:</p>
-        <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
+  <p>Av. da Liberdade 110<br>1269-046 Lisbon,<br>Portugal</p>
   <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
       </div>
     </div>
@@ -3717,10 +3479,10 @@ document.addEventListener('DOMContentLoaded', function() {
   <p>The date at the top of this policy indicates when it was last updated.</p>
       </div>
 
-      <div class="legal-popup-section">
+        <div class="legal-popup-section">
   <h2>7. Contact</h2>
   <p>If you have questions about this Cookie Policy, please contact us:</p>
-        <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
+        <p>Av. da Liberdade 110<br>1269-046 Lisbon,<br>Portugal</p>
   <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
       </div>
     </div>
@@ -3731,103 +3493,90 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
+<!-- Global Risk Disclosure popup (i18n-managed) -->
 <div id="risco-popup" class="legal-popup-overlay">
   <div class="legal-popup">
     <div class="legal-popup-header">
-  <h2 class="legal-popup-title">Risk Disclosure</h2>
+      <h2 class="legal-popup-title" data-i18n="risk_title">Risk Disclosure</h2>
       <button class="legal-popup-close" data-close="risco-popup">×</button>
     </div>
     <div class="legal-popup-content">
-      <div class="legal-popup-alert">
-  <p class="font-bold" style="color: #ff4d4d;">IMPORTANT: Trading and investing involve significant risks. Please read this notice carefully before using our services.</p>
-      </div>
-
-  <p>Last updated: May 7, 2025</p>
-  <p>This risk disclosure informs users of Impulso Invest about the risks associated with automated trading and investing in general. It is important that you fully understand these risks before using our services.</p>
+      <p class="legal-alert" data-i18n="risk_alert">IMPORTANT: Trading and investing involve significant risks. Please read this disclosure carefully before using our services.</p>
+      <p data-i18n="risk_updated">Last updated: May 7, 2025</p>
+      <p data-i18n="risk_intro">This Risk Disclosure informs users about the risks associated with automated trading and investing.</p>
 
       <div class="legal-popup-section">
-        <h2>1. General Investment Risks</h2>
-        <p>All financial investments carry risks. The value of your investments may rise or fall, and you may receive less than you originally invested. Past performance does not guarantee future returns.</p>
-        <ul>
-          <li>Financial markets can be volatile and prices of financial instruments can fluctuate significantly</li>
-          <li>Investments are subject to market, liquidity, credit, and other risks</li>
-          <li>Economic, political, and social factors can affect performance</li>
-          <li>Currency fluctuations can negatively impact value or returns</li>
+        <h2 data-i18n="risk_general_title">1. General Investment Risks</h2>
+        <p data-i18n="risk_general_text">All financial investments carry risks.</p>
+        <ul class="list-disc ml-6">
+          <li data-i18n="risk_general_1">Financial markets can be volatile...</li>
+          <li data-i18n="risk_general_2">Investments are subject to market...</li>
+          <li data-i18n="risk_general_3">Economic, political, and social factors...</li>
+          <li data-i18n="risk_general_4">Currency fluctuations can adversely affect...</li>
         </ul>
       </div>
 
       <div class="legal-popup-section">
-        <h2>2. Specific Risks of Automated Trading</h2>
-        <p>Automated trading and AI-based systems like Impulso Invest carry additional risks:</p>
-        <ul>
-          <li><strong>Technical failures:</strong> Automated systems can experience outages, e.g., connectivity issues, hardware/software faults, programming errors</li>
-          <li><strong>Algorithmic limitations:</strong> Algorithms rely on historical data and may be unsuitable under new market conditions</li>
-          <li><strong>Execution speed:</strong> Delays can lead to slippage and different prices</li>
-          <li><strong>Technological dependency:</strong> Automated trading depends on infrastructure that can fail</li>
-          <li><strong>Overfitting:</strong> Models may be overly fitted to past data and perform poorly in the future</li>
+        <h2 data-i18n="risk_auto_title">2. Specific Risks of Automated Trading</h2>
+        <p data-i18n="risk_auto_text">Automated trading and AI-based systems involve additional risks:</p>
+        <ul class="list-disc ml-6">
+          <li data-i18n="risk_auto_1">Technical failures...</li>
+          <li data-i18n="risk_auto_2">Algorithmic limitations...</li>
+          <li data-i18n="risk_auto_3">Execution speed...</li>
+          <li data-i18n="risk_auto_4">Technological dependency...</li>
+          <li data-i18n="risk_auto_5">Overfitting...</li>
         </ul>
       </div>
 
       <div class="legal-popup-section">
-        <h2>3. Suitability for Investors</h2>
-        <p>Before using Impulso Invest, carefully consider whether this service is suitable for you, taking into account:</p>
-        <ul>
-          <li>Your investment objectives</li>
-          <li>Your financial situation and resources</li>
-          <li>Your investment experience and knowledge</li>
-          <li>Your risk tolerance</li>
-          <li>Your ability to bear losses</li>
+        <h2 data-i18n="risk_suitability_title">3. Suitability</h2>
+        <p data-i18n="risk_suitability_text">Before using Impulso Invest, consider whether this service is appropriate for you:</p>
+        <ul class="list-disc ml-6">
+          <li data-i18n="risk_suitability_1">Your investment objectives</li>
+          <li data-i18n="risk_suitability_2">Your financial situation</li>
+          <li data-i18n="risk_suitability_3">Your experience and knowledge</li>
+          <li data-i18n="risk_suitability_4">Your risk tolerance</li>
+          <li data-i18n="risk_suitability_5">Your ability to bear losses</li>
         </ul>
-        <p>If in doubt about suitability, we recommend consulting an independent financial advisor.</p>
+        <p data-i18n="risk_suitability_note">If in doubt, seek advice from an independent financial advisor.</p>
       </div>
 
       <div class="legal-popup-section">
-  <h2>4. Limitation of Liability</h2>
-  <p>Micronyx AI Ltd. does not guarantee profits or specific outcomes from using Impulso Invest. We are not liable for direct or indirect losses or damages arising from the use of our services.</p>
-  <p>By using Impulso Invest, you acknowledge and accept all risks associated with automated trading and investing.</p>
+        <h2 data-i18n="risk_liability_title">4. Limitation of Liability</h2>
+        <p data-i18n="risk_liability_text_1">Micronyx AI Ltd. does not guarantee profits or specific results.</p>
+        <p data-i18n="risk_liability_text_2">By using Impulso Invest, you acknowledge and accept all risks.</p>
       </div>
 
       <div class="legal-popup-section">
-        <h2>5. Precautions</h2>
-        <p>To mitigate the risks of automated trading, we recommend:</p>
-        <ul>
-          <li>Invest only capital you can afford to lose</li>
-          <li>Diversify your investments</li>
-          <li>Monitor system performance regularly</li>
-          <li>Set clear loss limits</li>
-          <li>Stay informed about market conditions</li>
-          <li>Start with small amounts until you are familiar with the system</li>
+        <h2 data-i18n="risk_precautions_title">5. Precautions</h2>
+        <p data-i18n="risk_precautions_text">To mitigate risks, we recommend:</p>
+        <ul class="list-disc ml-6">
+          <li data-i18n="risk_precautions_1">Invest only capital you can afford to lose</li>
+          <li data-i18n="risk_precautions_2">Diversify your investments</li>
+          <li data-i18n="risk_precautions_3">Monitor performance regularly</li>
+          <li data-i18n="risk_precautions_4">Set clear loss limits</li>
+          <li data-i18n="risk_precautions_5">Stay informed about market conditions</li>
+          <li data-i18n="risk_precautions_6">Start with small amounts</li>
         </ul>
       </div>
 
-      <div class="legal-popup-company-info">
-  <h3>About Micronyx AI Ltd.</h3>
-  <p>Micronyx AI is a financial technology developed by Micronyx AI Ltd., authorized and supervised by the CMVM (Comissão do Mercado de Valores Mobiliários) under license number 37925.</p>
-  <p>The AI trading system operates in accordance with EU law and is independently audited.</p>
-        <p style="margin-top: 0.75rem;">
-          <strong>CMVM License:</strong> No. 37925<br>
-          <strong>Commercial Registry:</strong> 287190345
-        </p>
+      <div class="legal-popup-section">
+        <h2 data-i18n="risk_changes_title">6. Changes to this Disclosure</h2>
+        <p data-i18n="risk_changes_text">This Risk Disclosure may be updated periodically.</p>
       </div>
 
       <div class="legal-popup-section">
-  <h2>6. Changes to this Disclosure</h2>
-  <p>This risk disclosure may be updated periodically. We encourage you to review it regularly to stay informed about the risks of our services.</p>
-      </div>
-
-      <div class="legal-popup-section">
-  <h2>7. Contact</h2>
-  <p>If you have questions about this risk disclosure, you can contact us at:</p>
-        <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
-  <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
+        <h2 data-i18n="risk_contact_title">7. Contact</h2>
+        <p data-i18n="risk_contact_text">If you have questions about this Risk Disclosure, you can contact us at:</p>
+        <p>Av. da Liberdade 110<br>1269-046 Lisbon,<br>Portugal</p>
+        <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
       </div>
     </div>
-    <div class="legal-popup-footer">
-      © 2025 Micronyx AI Ltd. All rights reserved.<br>
-      CMVM License No. 37925 | Commercial Registry: 287190345
-    </div>
+    <div class="legal-popup-footer" data-i18n="risk_footer">© 2025 Micronyx AI Ltd. All rights reserved.<br>CMVM License No. 37925 | Commercial Registry: 287190345</div>
   </div>
 </div>
+
+<!-- Duplicate Risk Disclosure overlay removed (now handled by single i18n-managed popup) -->
     `;
     
     // Adicionar os popups ao final do body
@@ -4136,103 +3885,7 @@ document.addEventListener('click', function() {
 
 <div>
     <div id="termos-uso-popup" class="legal-popup-overlay">
-        <div class="legal-popup">
-          <div class="legal-popup-header">
-            <h2 class="legal-popup-title">Terms of Use</h2>
-            <button class="legal-popup-close" data-close="termos-uso-popup">×</button>
-          </div>
-          <div class="legal-popup-content">
-            <!-- Terms content -->
-            <p>Last updated: May 7, 2025</p>
-      
-            <div class="legal-popup-section">
-              <h2>1. Acceptance of Terms</h2>
-              <p>By accessing or using the services of Impulso Invest, operated by Micronyx AI Ltd., you agree to comply with and be bound by these Terms of Use. If you do not agree with any part of these terms, you may not use our services.</p>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>2. Description of Services</h2>
-              <p>Impulso Invest provides automated trading services using AI algorithms. Our services include, among others:</p>
-              <ul>
-                <li>Real-time market analysis</li>
-                <li>Automated trade execution</li>
-                <li>Portfolio management</li>
-                <li>Performance reports</li>
-              </ul>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>3. Investment Risks</h2>
-              <p>All investments involve risk. Past performance does not guarantee future results. By using our services, you acknowledge that:</p>
-              <ul>
-                <li>The value of investments can rise or fall</li>
-                <li>You may receive less back than you originally invested</li>
-                <li>Currency fluctuations can affect the value of your investments</li>
-              </ul>
-              <p>We recommend obtaining independent financial advice before making investment decisions.</p>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>4. Eligibility</h2>
-              <p>To use our services, you must:</p>
-              <ul>
-                <li>Be at least 18 years old</li>
-                <li>Be legally capable of entering into binding contracts</li>
-                <li>Not be legally prohibited from using our services</li>
-                <li>Provide truthful and complete information during registration</li>
-              </ul>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>5. Privacy</h2>
-              <p>Protecting your personal data is important to us. Our <a href="#" class="popup-trigger" data-popup="privacidade-popup">Privacy Policy</a> describes how we collect, use, and protect your personal data.</p>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>6. Intellectual Property</h2>
-              <p>All content, designs, graphics, interfaces, code, and software on our website and services are the property of Micronyx AI Ltd. and protected by intellectual property law.</p>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>7. Limitation of Liability</h2>
-              <p>Neither Micronyx AI Ltd. nor its directors, employees, or affiliates shall be liable for direct, indirect, incidental, special, or consequential damages arising from the use or inability to use our services.</p>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>8. Changes to Terms</h2>
-              <p>We reserve the right to modify these terms at any time. Changes take effect immediately upon posting the updated terms. Continued use of our services constitutes acceptance of the new terms.</p>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>9. Governing Law</h2>
-              <p>These terms are governed by and construed in accordance with the laws of Switzerland, without regard to conflict of law principles.</p>
-            </div>
-      
-            <div class="legal-popup-section">
-              <h2>10. Contact</h2>
-              <p>If you have questions about these Terms of Use, please contact us:</p>
-              <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
-              <p>Email: <a href="/cdn-cgi/l/email-protection#8cefe3e2f8edf8e3cce1e5effee3e2f5f4ede5a2efe3e1"><span class="__cf_email__" data-cfemail="aac9c5c4decbdec5eac7c3c9d8c5c4d3d2cbc384c9c5c7">[email�protected]</span></a></p>
-            </div>
-          </div>
-          <div class="legal-popup-footer">
-            © 2025 Micronyx AI Ltd. All rights reserved.<br>
-            CMVM License No. 37925 | Commercial Registry: 287190345
-          </div>
-        </div>
-      </div>
-        
-      <div id="privacidade-popup" class="legal-popup-overlay">
-        <div class="legal-popup">
-          <div class="legal-popup-header">
-            <h2 class="legal-popup-title">Privacy Policy</h2>
-            <button class="legal-popup-close" data-close="privacidade-popup">×</button>
-          </div>
-          <div class="legal-popup-content">
-            <p>Last updated: May 7, 2025</p>
-            <p>Micronyx AI Ltd., operator of Impulso Invest, is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal data when you use our services.</p>
-      
-            <div class="legal-popup-section">
+        <!-- Duplicate German Risk Disclosure removed -->
               <h2>1. Data We Collect</h2>
               <p>We may collect the following types of data:</p>
       
@@ -4336,8 +3989,8 @@ document.addEventListener('click', function() {
             <div class="legal-popup-section">
               <h2>11. Contact</h2>
               <p>If you have questions about this Privacy Policy or our processing of your personal data, please contact us:</p>
-              <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
-              <p>Email: <a href="/cdn-cgi/l/email-protection#bdded2d3c9dcc9d2fdd0d4decfd2d3c4c5dcd493ded2d0"><span class="__cf_email__" data-cfemail="b7d4d8d9c3d6c3d8f7daded4c5d8d9cecfd6de99d4d8da">[email�protected]</span></a></p>
+              <p>Av. da Liberdade 110<br>1269-046 Lisbon,<br>Portugal</p>
+              <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
             </div>
           </div>
           <div class="legal-popup-footer">
@@ -4439,10 +4092,10 @@ document.addEventListener('click', function() {
           <h2>4. Third-Party Cookies</h2>
           <p>In addition to our own cookies (first-party cookies), we also use third-party cookies on our website. These are set by a domain other than the website you are visiting. We use third-party cookies for the following purposes:</p>
           <ul>
-            <li>Traffic-Analyse (Google Analytics)</li>
-            <li>Marketing und Werbung (Facebook, Google Ads)</li>
-            <li>Social Media Funktionen (Facebook, Twitter, LinkedIn)</li>
-            <li>Sicherheitsverbesserungen und Betrugsprävention</li>
+            <li>Traffic analysis (Google Analytics)</li>
+            <li>Marketing and advertising (Facebook, Google Ads)</li>
+            <li>Social media features (Facebook, Twitter, LinkedIn)</li>
+            <li>Security enhancements and fraud prevention</li>
           </ul>
         </div>
   
@@ -4475,8 +4128,8 @@ document.addEventListener('click', function() {
         <div class="legal-popup-section">
           <h2>7. Contact</h2>
           <p>If you have questions about this Cookie Policy, please contact us:</p>
-          <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
-          <p>E-Mail: <a href="/cdn-cgi/l/email-protection#4d2e2223392c39220d20242e3f222334352c24632e2220"><span class="__cf_email__" data-cfemail="9bf8f4f5effaeff4dbf6f2f8e9f4f5e2e3faf2b5f8f4f6">[email�protected]</span></a></p>
+          <p>Av. da Liberdade 110<br>1269-046 Lisbon,<br>Portugal</p>
+          <p>Email: <a href="mailto:contato@micronyxai.com">contato@micronyxai.com</a></p>
         </div>
       </div>
       <div class="legal-popup-footer">
@@ -4488,101 +4141,97 @@ document.addEventListener('click', function() {
 
 
 
-  <div id="risco-popup" class="legal-popup-overlay">
-    <div class="legal-popup">
-      <div class="legal-popup-header">
-        <h2 class="legal-popup-title">Risikohinweis</h2>
-        <button class="legal-popup-close" data-close="risco-popup">×</button>
-      </div>
-      <div class="legal-popup-content">
-        <div class="legal-popup-alert">
-          <p class="font-bold" style="color: #ff4d4d;">WICHTIG: Trading und Investitionen bergen erhebliche Risiken. Bitte lesen Sie diesen Hinweis sorgfältig, bevor Sie unsere Dienste nutzen.</p>
-        </div>
-  
-        <p>Letzte Aktualisierung: 7. Mai 2025</p>
-        <p>Dieser Risikohinweis informiert Nutzer von Impulso Invest über die mit automatisiertem Trading und Investitionen im Allgemeinen verbundenen Risiken. Es ist wichtig, dass Sie diese Risiken vollständig verstehen, bevor Sie unsere Dienste nutzen.</p>
-  
-        <div class="legal-popup-section">
-          <h2>1. Allgemeine Investitionsrisiken</h2>
-          <p>Alle Finanzinvestitionen sind mit Risiken verbunden. Der Wert Ihrer Investitionen kann steigen oder fallen, und Sie könnten weniger zurückerhalten als ursprünglich investiert. Frühere Ergebnisse garantieren keine zukünftigen Erträge.</p>
-          <ul>
-            <li>Finanzmärkte können volatil sein und Preise von Finanzinstrumenten können stark schwanken</li>
-            <li>Investitionen unterliegen Markt-, Liquiditäts-, Kredit- und weiteren Risiken</li>
-            <li>Wirtschaftliche, politische und soziale Faktoren können die Performance beeinflussen</li>
-            <li>Wechselkursschwankungen können sich negativ auf Wert oder Rendite auswirken</li>
-          </ul>
-        </div>
-  
-        <div class="legal-popup-section">
-          <h2>2. Spezifische Risiken des automatisierten Tradings</h2>
-          <p>Automatisiertes Trading und KI-basierte Systeme wie Impulso Invest bringen zusätzliche Risiken mit sich:</p>
-          <ul>
-            <li><strong>Technische Fehler:</strong> Automatisierte Systeme können Ausfälle haben, z.B. Verbindungsprobleme, Hardware- oder Softwarefehler, Programmierungsfehler</li>
-            <li><strong>Algorithmische Beschränkungen:</strong> Algorithmen basieren auf historischen Daten und können sich in neuen Marktbedingungen als ungeeignet erweisen</li>
-            <li><strong>Ausführungsgeschwindigkeit:</strong> Verzögerungen können zu abweichenden Preisen führen</li>
-            <li><strong>Technologische Abhängigkeit:</strong> Automatisiertes Trading ist abhängig von Infrastruktur, die ausfallen kann</li>
-            <li><strong>Overfitting:</strong> Modelle können zu stark an vergangene Daten angepasst sein und in der Zukunft schlecht performen</li>
-          </ul>
-        </div>
-  
-        <div class="legal-popup-section">
-          <h2>3. Geeignetheit für den Anleger</h2>
-          <p>Bevor Sie Impulso Invest verwenden, sollten Sie sorgfältig prüfen, ob dieser Dienst für Sie geeignet ist, unter Berücksichtigung von:</p>
-          <ul>
-            <li>Ihren Anlagezielen</li>
-            <li>Ihrer finanziellen Situation und Ressourcen</li>
-            <li>Ihrer Erfahrung und Kenntnis im Bereich Investitionen</li>
-            <li>Ihrer Risikotoleranz</li>
-            <li>Ihrer Fähigkeit, Verluste zu tragen</li>
-          </ul>
-          <p>Bei Zweifeln bezüglich der Eignung empfehlen wir die Beratung durch einen unabhängigen Finanzberater.</p>
-        </div>
-  
-        <div class="legal-popup-section">
-          <h2>4. Haftungsbeschränkung</h2>
-          <p>Micronyx AI Ltd. garantiert keine Gewinne oder spezifische Ergebnisse durch die Nutzung von Impulso Invest. Wir haften nicht für direkte oder indirekte Verluste oder Schäden, die aus der Nutzung unserer Dienste entstehen.</p>
-          <p>Durch die Nutzung von Impulso Invest erkennen Sie alle mit automatisiertem Trading und Investitionen verbundenen Risiken an und akzeptieren diese.</p>
-        </div>
-  
-        <div class="legal-popup-section">
-          <h2>5. Vorsichtsmaßnahmen</h2>
-          <p>Um die Risiken des automatisierten Tradings zu mindern, empfehlen wir:</p>
-          <ul>
-            <li>Nur Kapital zu investieren, dessen Verlust Sie sich leisten können</li>
-            <li>Ihre Investitionen zu diversifizieren</li>
-            <li>Die Systemleistung regelmäßig zu überwachen</li>
-            <li>Klare Verlustgrenzen festzulegen</li>
-            <li>Über die Marktbedingungen informiert zu bleiben</li>
-            <li>Mit kleinen Beträgen zu beginnen, bis Sie mit dem System vertraut sind</li>
-          </ul>
-        </div>
-  
-        <div class="legal-popup-company-info">
-          <h3>Über Micronyx AI Ltd.</h3>
-          <p>Micronyx AI ist eine Finanztechnologie, entwickelt von Micronyx AI Ltd., zugelassen und überwacht von der CMVM (Comissão do Mercado de Valores Mobiliários) unter der Lizenznummer 37925.</p>
-          <p>Das KI-Tradingsystem arbeitet gemäß EU-Recht und wird unabhängig geprüft.</p>
-          <p style="margin-top: 0.75rem;">
-            <strong>CMVM Lizenz:</strong> Nr. 37925<br>
-            <strong>Handelsregister:</strong> 287190345
-          </p>
-        </div>
-  
-        <div class="legal-popup-section">
-          <h2>6. Änderungen am Risikohinweis</h2>
-          <p>Dieser Risikohinweis kann periodisch aktualisiert werden. Wir empfehlen Ihnen, ihn regelmäßig zu überprüfen, um über die Risiken unserer Dienste informiert zu bleiben.</p>
-        </div>
-  
-        <div class="legal-popup-section">
-          <h2>7. Kontakt</h2>
-          <p>Bei Fragen zu diesem Risikohinweis können Sie uns kontaktieren unter:</p>
-          <p>Av. da Liberdade 110<br>1269-046 Lissabon,<br>Portugal</p>
-          <p>Email: <a href="/cdn-cgi/l/email-protection#d0b3bfbea4b1a4bf90bdb9b3a2bfbea9a8b1b9feb3bfbd"><span class="__cf_email__" data-cfemail="cba8a4a5bfaabfa48ba6a2a8b9a4a5b2b3aaa2e5a8a4a6">[email�protected]</span></a></p>
-        </div>
-      </div>
-      <div class="legal-popup-footer">
-        © 2025 Micronyx AI Ltd. Alle Rechte vorbehalten.<br>
-        CMVM Lizenz Nr. 37925 | Handelsregister: 287190345
-      </div>
-    </div>
-  </div>
-    </div><script data-cfasync="false" src="js/email-decode.min.js"></script></body></html>
+  <!-- Removed duplicate German Risk Disclosure popup content -->
+    </div><script data-cfasync="false" src="js/email-decode.min.js"></script>
+<!-- i18next via CDN -->
+<script src="https://unpkg.com/i18next@23.11.5/i18next.min.js"></script>
+<script src="https://unpkg.com/i18next-http-backend@2.6.2/i18nextHttpBackend.min.js"></script>
+<script>
+(function(){
+  function getLang(){
+    try {
+      const url = new URL(window.location.href);
+      const q = (url.searchParams.get('lang')||'').toLowerCase();
+      if (q){ localStorage.setItem('lang', q); return q; }
+      const ls = (localStorage.getItem('lang')||'').toLowerCase();
+      if (ls) return ls;
+    } catch(e) {}
+    const nav = (navigator.language||'en').toLowerCase();
+    return nav.startsWith('uk') ? 'uk' : 'en';
+  }
+  const lng = getLang();
+  document.documentElement.setAttribute('lang', lng);
+
+  i18next
+    .use(i18nextHttpBackend)
+    .init({
+      lng,
+      fallbackLng: 'en',
+      backend: {
+        loadPath: 'i18n/{{lng}}.json'
+      }
+    }).then(function(){
+      function applyTranslations(){
+        document.querySelectorAll('[data-i18n]').forEach(function(el){
+          const key = el.getAttribute('data-i18n');
+          const val = i18next.t(key);
+          if (val && typeof val === 'string') {
+            el.innerHTML = val;
+          }
+        });
+        // Legal links
+        const t = (k)=> i18next.t(k);
+        document.querySelectorAll('.legal-popup-link[data-popup="termos-uso-popup"]').forEach(el => el.textContent = t('legal_terms'));
+        document.querySelectorAll('.legal-popup-link[data-popup="privacidade-popup"]').forEach(el => el.textContent = t('legal_privacy'));
+        document.querySelectorAll('.legal-popup-link[data-popup="cookies-popup"]').forEach(el => el.textContent = t('legal_cookies'));
+        document.querySelectorAll('.legal-popup-link[data-popup="risco-popup"]').forEach(el => el.textContent = t('legal_risk'));
+      }
+      applyTranslations();
+      i18next.on('languageChanged', applyTranslations);
+
+      // Language switcher (EN/UK)
+      function setLang(newLng){
+        try {
+          localStorage.setItem('lang', newLng);
+          const url = new URL(window.location.href);
+          url.searchParams.set('lang', newLng);
+          history.replaceState(null, '', url.toString());
+        } catch(e) {}
+        document.documentElement.setAttribute('lang', newLng);
+        if (i18next.language !== newLng) {
+          i18next.changeLanguage(newLng);
+        } else {
+          // force re-apply to sync UI state
+          applyTranslations();
+        }
+        updateSwitcherActive(newLng);
+      }
+
+      function updateSwitcherActive(activeLng){
+        const enBtn = document.getElementById('lang-en-btn');
+        const ukBtn = document.getElementById('lang-uk-btn');
+        if (!enBtn || !ukBtn) return;
+        const activeStyle = 'background:#10b981;color:#0b1020;'; // green bg
+        const inactiveStyle = 'background:transparent;color:#e5e7eb;';
+        enBtn.style.cssText = 'padding:6px 10px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);cursor:pointer;' + (activeLng==='en'?activeStyle:inactiveStyle);
+        ukBtn.style.cssText = 'padding:6px 10px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);cursor:pointer;' + (activeLng==='uk'?activeStyle:inactiveStyle);
+      }
+
+      function createLangSwitcher(){
+        if (document.getElementById('lang-switcher')) return;
+        const wrap = document.createElement('div');
+        wrap.id = 'lang-switcher';
+        wrap.setAttribute('aria-label', 'Language switcher');
+        wrap.style.cssText = 'position:fixed;top:12px;right:12px;z-index:9999;display:flex;gap:6px;background:rgba(3,7,18,0.6);border:1px solid rgba(255,255,255,0.1);padding:4px;border-radius:9999px;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);';
+        wrap.innerHTML = '<button id="lang-en-btn" type="button">EN</button><button id="lang-uk-btn" type="button">UK</button>';
+        document.body.appendChild(wrap);
+        document.getElementById('lang-en-btn').addEventListener('click', function(){ setLang('en'); });
+        document.getElementById('lang-uk-btn').addEventListener('click', function(){ setLang('uk'); });
+        updateSwitcherActive(i18next.language || lng);
+      }
+
+      createLangSwitcher();
+    });
+})();
+</script>
+</body></html>
