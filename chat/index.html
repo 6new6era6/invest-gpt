@@ -32,6 +32,15 @@
 		</main>
 
 		<script src="../js/jquery-3.4.1.min.js"></script>
+		<script>
+			(function(){
+				const params = new URLSearchParams(location.search);
+				const lang = params.get('lang') || localStorage.getItem('lang') || 'uk';
+				document.documentElement.lang = lang;
+				const sub = document.querySelector('header p');
+				if (lang === 'en' && sub) sub.textContent = 'Let’s assess your investment goals';
+			})();
+		</script>
 		<script src="../js/chat_flow.js"></script>
 </body>
 </html>
